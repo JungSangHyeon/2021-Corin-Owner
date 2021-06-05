@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_marginBottom="1dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="오후 1시"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="총 방문자 수"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="남성"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="여성"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <View
+        android:id="@+id/textView13"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/kati_gray"
+        app:layout_constraintEnd_toStartOf="@+id/textView14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <View
+        android:id="@+id/textView14"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:background="@color/kati_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/editMyInfo_genderGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:layout_editor_absoluteX="61dp">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/editMyInfo_genderSeceret"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10대"
+            app:chipBackgroundColor="@color/bg_chip"
+            app:chipStrokeColor="@color/kati_middle_gray"
+            app:chipStrokeWidth="1.5dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/editMyInfo_genderMan"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="20대"
+            app:chipBackgroundColor="@color/bg_chip"
+            app:chipStrokeColor="@color/kati_middle_gray"
+            app:chipStrokeWidth="1.5dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/editMyInfo_genderWomen"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="30대"
+            app:chipBackgroundColor="@color/bg_chip"
+            app:chipStrokeColor="@color/kati_middle_gray"
+            app:chipStrokeWidth="1.5dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/editMyInfo_genderWomen2"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40대"
+            app:chipBackgroundColor="@color/bg_chip"
+            app:chipStrokeColor="@color/kati_middle_gray"
+            app:chipStrokeWidth="1.5dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/editMyInfo_genderWomen3"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50대"
+            app:chipBackgroundColor="@color/bg_chip"
+            app:chipStrokeColor="@color/kati_middle_gray"
+            app:chipStrokeWidth="1.5dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/editMyInfo_genderWomen4"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60대"
+            app:chipBackgroundColor="@color/bg_chip"
+            app:chipStrokeColor="@color/kati_middle_gray"
+            app:chipStrokeWidth="1.5dp" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

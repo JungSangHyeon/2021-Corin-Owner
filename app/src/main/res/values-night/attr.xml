@@ -6,4 +6,13 @@
         <attr name="button_image" format="reference"/>
     </declare-styleable>
 
+    <declare-styleable name="JSHSelectItem">
+        <attr name="JSHSelectItem_title" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="JSHInfoEditItem">
+        <attr name="JSHInfoItem_title" format="string"/>
+        <attr name="JSHInfoItem_content" format="string"/>
+    </declare-styleable>
+
 </resources>

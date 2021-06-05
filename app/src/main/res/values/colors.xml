@@ -17,5 +17,8 @@
     <color name="kati_red_ripple">#F8CDD6</color>
     <color name="kati_orange">#F08430</color>
 
-    <color name="corin_blue">#1C28B8</color>
+    <color name="corin_light_blue">#C7DAEF</color>
+    <color name="corin_middle_blue">#1565c0</color>
+    <color name="corin_blue">#003c8f</color>
+
 </resources>
