@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--  Default Color  -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -8,17 +9,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="kati_black">#343434</color>
-    <color name="kati_gray">#B9B9B9</color>
-    <color name="kati_light_gray">#F4F4F4</color>
-    <color name="kati_middle_gray">#DDDDDD</color>
-    <color name="kati_dark_gray">#444444</color>
-    <color name="kati_red">#E53154</color>
-    <color name="kati_red_ripple">#F8CDD6</color>
-    <color name="kati_orange">#F08430</color>
-
-    <color name="corin_light_blue">#C7DAEF</color>
-    <color name="corin_middle_blue">#1565c0</color>
+    <!--  Corin Color  -->
+    <color name="corin_lightBlue">#C7DAEF</color>
+    <color name="corin_middleBlue">#1565c0</color>
     <color name="corin_blue">#003c8f</color>
-
+    <color name="corin_lightGray">#F4F4F4</color>
+    <color name="corin_middleGray">#DDDDDD</color>
+    <color name="corin_gray">#B9B9B9</color>
+    <color name="corin_darkGray">#444444</color>
+    <color name="corin_black">#343434</color>
 </resources>

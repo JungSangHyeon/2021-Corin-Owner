@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.CorinCoronaCheckInCustomer" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#1565c0</item>
-        <item name="colorPrimaryVariant">#003c8f</item>
+        <item name="colorPrimary">@color/corin_middleBlue</item>
+        <item name="colorPrimaryVariant">@color/corin_blue</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

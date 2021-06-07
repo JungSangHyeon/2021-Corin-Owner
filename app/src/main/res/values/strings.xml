@@ -1,5 +1,38 @@
 <resources>
-    <string name="app_name">Corin(Corona Check In) Customer</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Corin</string>
+
+    <!--  Main Activity  -->
+    <string name="mainActivity_bottomNavigation_checkInItemName">체크인</string>
+    <string name="mainActivity_bottomNavigation_nowCoronaItemName">코로나 현황</string>
+    <string name="mainActivity_bottomNavigation_myCorinItemName">마이코린</string>
+
+    <!--  Sign Up Activity  -->
+    <string name="signUpActivity_nextButtonText">다음</string>
+
+    <!--  Setting Private Info Layout   -->
+    <string name="settingPrivateInfoLayout_contentTitleText">개인 정보</string>
+    <string name="settingPrivateInfoLayout_nameEditTextHint">이름</string>
+    <string name="settingPrivateInfoLayout_ageEditTextHint">나이</string>
+    <string name="settingPrivateInfoLayout_secreteChipText">비공개</string>
+    <string name="settingPrivateInfoLayout_manChipText">남자</string>
+    <string name="settingPrivateInfoLayout_womenChipText">여자</string>
+
+    <!--  Sign Up Info Layout   -->
+    <string name="settingSignUpInfoLayout_contentTitleText">회원가입 정보</string>
+    <string name="settingSignUpInfoLayout_emailEditTextHint">이메일</string>
+    <string name="settingSignUpInfoLayout_passwordEditTextHint">비밀번호</string>
+    <string name="settingSignUpInfoLayout_passwordCheckEditTextHint">비밀번호 확인</string>
+    <string name="editMyInfoActivity_editMyInfoButtonText">내 정보 수정</string>
+
+    <!--  Info In And Out Item Widget  -->
+    <string name="inAndOutInfoItem_totalVisitorTextViewText">총 방문자 수</string>
+    <string name="inAndOutInfoItem_manVisitorTextViewText">남성</string>
+    <string name="inAndOutInfoItem_womenVisitorTextViewText">여성</string>
+    <string name="inAndOutInfoItem_ageChip10Text">10대</string>
+    <string name="inAndOutInfoItem_ageChip20Text">20대</string>
+    <string name="inAndOutInfoItem_ageChip30Text">30대</string>
+    <string name="inAndOutInfoItem_ageChip40Text">40대</string>
+    <string name="inAndOutInfoItem_ageChip50Text">50대</string>
+    <string name="inAndOutInfoItem_ageChip60Text">60대</string>
+
 </resources>

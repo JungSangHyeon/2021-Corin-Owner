@@ -4,13 +4,13 @@
     <item
         android:id="@+id/action_check_in"
         android:icon="@drawable/ic_baseline_qr_code_24"
-        android:title="체크인"/>
+        android:title="@string/mainActivity_bottomNavigation_checkInItemName"/>
     <item
-        android:id="@+id/action_home"
+        android:id="@+id/action_now_corona"
         android:icon="@drawable/ic_outline_coronavirus_24"
-        android:title="코로나 현황"/>
+        android:title="@string/mainActivity_bottomNavigation_nowCoronaItemName"/>
     <item
         android:id="@+id/action_my_corin"
         android:icon="@drawable/ic_outline_account_circle_24"
-        android:title="마이코린"/>
+        android:title="@string/mainActivity_bottomNavigation_myCorinItemName"/>
 </menu>

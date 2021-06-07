@@ -8,25 +8,25 @@
     >
 
     <com.example.corincoronacheckincustomer.JSHToolBar
-        android:id="@+id/home_toolbar"
+        android:id="@+id/jshToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:button_image="@drawable/jsh_close"
+        app:jshToolBar_button_image="@drawable/jsh_close"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="" />
+        app:jshToolBar_title="" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/inAndOutInfoItem_manVisitorTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CORIN"
-        android:textColor="@color/corin_middle_blue"
+        android:textColor="@color/corin_middleBlue"
         android:textSize="25sp"
         android:textStyle="bold"
         android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/jshToolbar" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
@@ -40,7 +40,7 @@
         android:layout_marginHorizontal="16dp"
         android:background="@drawable/bg_edit_text"
         android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/inAndOutInfoItem_manVisitorTextView"
         tools:layout_editor_absoluteX="99dp" />
 
     <EditText
@@ -86,7 +86,7 @@
         android:layout_width="0.5dp"
         android:layout_height="10dp"
         android:layout_marginRight="8dp"
-        android:background="@color/kati_dark_gray"
+        android:background="@color/corin_darkGray"
         app:layout_constraintBottom_toBottomOf="@+id/login_findPW_textView"
         app:layout_constraintEnd_toStartOf="@+id/login_findPW_textView"
         app:layout_constraintTop_toTopOf="@+id/login_findPW_textView" />
@@ -110,12 +110,12 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="8dp"
         android:text="로그인"
-        android:backgroundTint="@color/corin_middle_blue"
+        android:backgroundTint="@color/corin_middleBlue"
         app:layout_constraintTop_toBottomOf="@+id/checkBox2"
         tools:layout_editor_absoluteX="152dp" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/inAndOutInfoItem_manVisitorValueTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CORIN이 처음이신가요?  "
@@ -132,11 +132,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="회원가입"
-        android:textColor="@color/corin_middle_blue"
+        android:textColor="@color/corin_middleBlue"
         android:layout_marginTop="16dp"
         android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/inAndOutInfoItem_manVisitorValueTextView"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

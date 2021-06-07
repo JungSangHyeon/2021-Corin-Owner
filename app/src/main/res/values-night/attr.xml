@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <declare-styleable name="JSHToolBar">
-        <attr name="title" format="string"/>
-        <attr name="button_image" format="reference"/>
+    <!--  Custom View Attributes  -->
+    <declare-styleable name="jshToolBar">
+        <attr name="jshToolBar_title" format="string"/>
+        <attr name="jshToolBar_button_image" format="reference"/>
     </declare-styleable>
 
-    <declare-styleable name="JSHSelectItem">
-        <attr name="JSHSelectItem_title" format="string"/>
+    <declare-styleable name="jshSelectItem">
+        <attr name="jshSelectItem_title" format="string"/>
     </declare-styleable>
 
-    <declare-styleable name="JSHInfoEditItem">
-        <attr name="JSHInfoItem_title" format="string"/>
-        <attr name="JSHInfoItem_content" format="string"/>
+    <declare-styleable name="jshInfoEditItem">
+        <attr name="jshInfoItem_title" format="string"/>
+        <attr name="jshInfoItem_content" format="string"/>
     </declare-styleable>
-
 </resources>

@@ -2,21 +2,18 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/corin_lightGray"
-    tools:context=".SignUpActivity">
+    android:background="@color/corin_lightGray">
 
     <com.example.corincoronacheckincustomer.JSHToolBar
         android:id="@+id/jshToolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:jshToolBar_button_image="@drawable/jsh_close"
-        app:jshToolBar_title="회원가입"
-        android:background="@color/white"
-        android:elevation="5dp"/>
+        style="@style/jshToolBar"
+        app:jshToolBar_button_image="@drawable/jsh_before"
+        app:jshToolBar_title="내 정보 수정"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -24,27 +21,20 @@
         android:background="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/jshToolbar">
         <include
-            android:id="@+id/signUpActivity_include_layoutSettingSignUpInfo"
-            layout="@layout/layout_setting_sign_up_info"
+            android:id="@+id/editMyInfoActivity_include_settingPrivateInfo"
+            layout="@layout/layout_setting_private_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <include
-            android:id="@+id/signUpActivity_include_layoutEditMyInfo"
-            layout="@layout/layout_setting_private_info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/signUpActivity_include_layoutSettingSignUpInfo" />
-
         <Button
-            android:id="@+id/signUpActivity_nextButton"
+            android:id="@+id/editMyInfoActivity_editMyInfoButton"
             style="@style/corinSecondaryFragmentActionButton"
-            android:text="@string/signUpActivity_nextButtonText"
+            android:text="@string/editMyInfoActivity_editMyInfoButtonText"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/signUpActivity_include_layoutEditMyInfo" />
+            app:layout_constraintTop_toBottomOf="@+id/editMyInfoActivity_include_settingPrivateInfo" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

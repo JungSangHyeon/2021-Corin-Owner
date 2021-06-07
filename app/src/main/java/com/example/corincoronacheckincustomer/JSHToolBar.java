@@ -21,18 +21,18 @@ public class JSHToolBar extends LinearLayout {
         super(context, attrs);
 
         // Get Attributes
-        TypedArray attributeArray = context.getTheme().obtainStyledAttributes(attrs, R.styleable.JSHToolBar, 0, 0);
-        String title = attributeArray.getString(R.styleable.JSHToolBar_title);
-        int buttonImageSource = attributeArray.getResourceId(R.styleable.JSHToolBar_button_image, 0);
+        TypedArray attributeArray = context.getTheme().obtainStyledAttributes(attrs, R.styleable.jshToolBar, 0, 0);
+        String title = attributeArray.getString(R.styleable.jshToolBar_jshToolBar_title);
+        int buttonImageSource = attributeArray.getResourceId(R.styleable.jshToolBar_jshToolBar_button_image, 0);
 
         // Inflate View
         LayoutInflater layoutInflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View jshToolbar = layoutInflater.inflate(R.layout.widget_toolbar, this, false);
+        View jshToolbar = layoutInflater.inflate(R.layout.widget_jsh_toolbar, this, false);
         this.addView(jshToolbar);
 
         // Associate View
-        this.button = jshToolbar.findViewById(R.id.button_imageView);
-        this.title = jshToolbar.findViewById(R.id.title_textView);
+        this.button = jshToolbar.findViewById(R.id.jshToolBar_buttonImageView);
+        this.title = jshToolbar.findViewById(R.id.jshToolbar_titleTextView);
 
         // Initialize View
         this.button.setImageResource(buttonImageSource);

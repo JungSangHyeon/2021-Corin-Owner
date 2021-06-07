@@ -4,25 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/kati_light_gray"
-    tools:context=".EditMyInfoFragment"
+    android:background="@color/corin_lightGray"
     >
 
     <com.example.corincoronacheckincustomer.JSHToolBar
-        android:id="@+id/home_toolbar"
+        android:id="@+id/jshToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:elevation="5dp"
-        app:button_image="@drawable/jsh_before"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="출입 기록" />
+        app:jshToolBar_title="출입 기록" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/home_toolbar">
+        app:layout_constraintTop_toBottomOf="@+id/jshToolbar">
 
         <TextView
             android:layout_width="wrap_content"
@@ -44,7 +42,8 @@
             android:src="@drawable/ic_outline_date_range_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/corin_middleBlue" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -60,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:backgroundTint="@color/corin_middle_blue"
+        android:backgroundTint="@color/corin_middleBlue"
         app:borderWidth="0dp"
         android:layout_margin="16dp"
         app:tint="@android:color/white"

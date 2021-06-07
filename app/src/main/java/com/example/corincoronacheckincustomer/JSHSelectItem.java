@@ -19,12 +19,12 @@ public class JSHSelectItem extends LinearLayout {
         super(context, attrs);
 
         // Get Attributes
-        TypedArray attributeArray = context.getTheme().obtainStyledAttributes(attrs, R.styleable.JSHSelectItem, 0, 0);
-        String title = attributeArray.getString(R.styleable.JSHSelectItem_JSHSelectItem_title);
+        TypedArray attributeArray = context.getTheme().obtainStyledAttributes(attrs, R.styleable.jshSelectItem, 0, 0);
+        String title = attributeArray.getString(R.styleable.jshSelectItem_jshSelectItem_title);
 
         // Inflate View
         LayoutInflater layoutInflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View jshToolbar = layoutInflater.inflate(R.layout.widget_item_select, this, false);
+        View jshToolbar = layoutInflater.inflate(R.layout.widget_item_jsh_select, this, false);
         this.addView(jshToolbar);
 
         // Associate View

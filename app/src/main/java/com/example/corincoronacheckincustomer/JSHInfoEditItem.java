@@ -20,13 +20,13 @@ public class JSHInfoEditItem extends LinearLayout {
         super(context, attrs);
 
         // Get Attributes
-        TypedArray attributeArray = context.getTheme().obtainStyledAttributes(attrs, R.styleable.JSHInfoEditItem, 0, 0);
-        String title = attributeArray.getString(R.styleable.JSHInfoEditItem_JSHInfoItem_title);
-        String content = attributeArray.getString(R.styleable.JSHInfoEditItem_JSHInfoItem_content);
+        TypedArray attributeArray = context.getTheme().obtainStyledAttributes(attrs, R.styleable.jshInfoEditItem, 0, 0);
+        String title = attributeArray.getString(R.styleable.jshInfoEditItem_jshInfoItem_title);
+        String content = attributeArray.getString(R.styleable.jshInfoEditItem_jshInfoItem_content);
 
         // Inflate View
         LayoutInflater layoutInflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View jshToolbar = layoutInflater.inflate(R.layout.widget_item_info_and_edit, this, false);
+        View jshToolbar = layoutInflater.inflate(R.layout.widget_item_jsh_info_and_edit, this, false);
         this.addView(jshToolbar);
 
         // Associate View
