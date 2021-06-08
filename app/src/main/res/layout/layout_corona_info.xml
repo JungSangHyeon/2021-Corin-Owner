@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/coronaInfoLayout_locationTextView"
+        style="@style/corinContentTitleTextView"
+        android:text="지역 이름"
+        tools:ignore="HardcodedText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/coronaInfoLayout_totalPatientTitleTextView"
+        style="@style/corinContentSubTitleTextView"
+        android:text="@string/coronaInfoLayout_totalPatientTitleTextViewText"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coronaInfoLayout_locationTextView" />
+
+    <TextView
+        android:id="@+id/coronaInfoLayout_totalPatientValueTextView"
+        style="@style/corinContentValueTextView"
+        android:text="1.73억"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/coronaInfoLayout_totalPatientTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/coronaInfoLayout_totalPatientTitleTextView" />
+
+    <View
+        android:id="@+id/coronaInfoLayout_verticalDivider1"
+        style="@style/verticalDivider"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/coronaInfoLayout_verticalDivider2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/coronaInfoLayout_totalPatientTitleTextView" />
+
+    <TextView
+        android:id="@+id/coronaInfoLayout_totalCuredTitleTextView"
+        style="@style/corinContentSubTitleTextView"
+        android:text="@string/coronaInfoLayout_totalCuredTitleTextViewText"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/coronaInfoLayout_verticalDivider1"
+        app:layout_constraintTop_toTopOf="@+id/coronaInfoLayout_verticalDivider1" />
+
+    <TextView
+        android:id="@+id/coronaInfoLayout_totalCuredValueTextView"
+        style="@style/corinContentValueTextView"
+        android:text="-"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/coronaInfoLayout_totalCuredTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/coronaInfoLayout_totalCuredTitleTextView" />
+
+    <View
+        android:id="@+id/coronaInfoLayout_verticalDivider2"
+        style="@style/verticalDivider"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/coronaInfoLayout_verticalDivider1"
+        app:layout_constraintTop_toTopOf="@+id/coronaInfoLayout_totalCuredTitleTextView" />
+
+    <TextView
+        android:id="@+id/coronaInfoLayout_totalDeathTitleTextView"
+        style="@style/corinContentSubTitleTextView"
+        android:text="@string/coronaInfoLayout_totalDeathTitleTextViewText"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/coronaInfoLayout_verticalDivider2"
+        app:layout_constraintTop_toTopOf="@+id/coronaInfoLayout_verticalDivider2" />
+
+    <TextView
+        android:id="@+id/coronaInfoLayout_totalDeathValueTextView"
+        style="@style/corinContentValueTextView"
+        android:text="371만"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/coronaInfoLayout_totalDeathTitleTextView"
+        app:layout_constraintTop_toBottomOf="@+id/coronaInfoLayout_totalDeathTitleTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

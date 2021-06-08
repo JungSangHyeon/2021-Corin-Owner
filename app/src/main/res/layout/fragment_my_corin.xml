@@ -9,124 +9,118 @@
 
     <com.example.corincoronacheckincustomer.JSHToolBar
         android:id="@+id/jshToolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/white"
-        android:elevation="5dp"
-        app:jshToolBar_title="마이코린" />
+        style="@style/jshToolBar"
+        app:jshToolBar_title="@string/myCorinFragment_toolBarTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/myCorin_loginLayout"
+        android:id="@+id/myCorinFragment_loginLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/jshToolbar">
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/myCorinFragment_loginLayout_infoTextView"
+            style="@style/corinContentSubTitleTextView"
             android:layout_marginTop="24dp"
-            android:text="로그인 하고 코린을 사용해보세요!"
+            android:text="@string/myCorinFragment_loginLayout_infoTextViewText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
         <Button
-            android:id="@+id/myCorin_loginButton"
+            android:id="@+id/myCorinFragment_loginLayout_loginButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:layout_marginRight="8dp"
-            android:text="로그인"
-            app:layout_constraintEnd_toStartOf="@+id/myCorin_signUpButton"
+            android:layout_marginEnd="8dp"
+            android:text="@string/myCorinFragment_loginLayout_loginButtonText"
+            app:layout_constraintEnd_toStartOf="@+id/myCorinFragment_loginLayout_signUpButton"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintTop_toBottomOf="@+id/myCorinFragment_loginLayout_infoTextView" />
 
         <Button
-            android:id="@+id/myCorin_signUpButton"
+            android:id="@+id/myCorinFragment_loginLayout_signUpButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
-            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
             android:backgroundTint="@color/white"
-            android:text="회원가입"
+            android:text="@string/myCorinFragment_loginLayout_signUpButtonText"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/myCorin_loginButton"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            app:layout_constraintStart_toEndOf="@+id/myCorinFragment_loginLayout_loginButton"
+            app:layout_constraintTop_toBottomOf="@+id/myCorinFragment_loginLayout_infoTextView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.example.corincoronacheckincustomer.JSHSelectItem
-        android:id="@+id/myCorin_editMyInfo"
+        android:id="@+id/myCorinFragment_editMyInfoSelectItem"
         android:layout_width="match_parent"
-
         android:layout_height="wrap_content"
-        app:jshSelectItem_title="내 정보 수정"
-        app:layout_constraintTop_toBottomOf="@+id/myCorin_loginLayout"
-        />
+        app:jshSelectItem_title="@string/myCorinFragment_editMyInfoSelectItemText"
+        app:layout_constraintTop_toBottomOf="@+id/myCorinFragment_loginLayout" />
 
     <com.example.corincoronacheckincustomer.JSHSelectItem
-        android:id="@+id/selectItem1"
+        android:id="@+id/myCorinFragment_aboutCorinSelectItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:jshSelectItem_title="코린 안내"
+        app:jshSelectItem_title="@string/myCorinFragment_aboutCorinSelectItemText"
         android:layout_marginTop="1dp"
-        app:layout_constraintTop_toBottomOf="@+id/myCorin_editMyInfo" />
+        app:layout_constraintTop_toBottomOf="@+id/myCorinFragment_editMyInfoSelectItem" />
 
     <com.example.corincoronacheckincustomer.JSHSelectItem
-        android:id="@+id/selectItem2"
+        android:id="@+id/myCorinFragment_aboutServiceSelectItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
-        app:jshSelectItem_title="서비스 약관"
-        app:layout_constraintTop_toBottomOf="@+id/selectItem1" />
+        app:jshSelectItem_title="@string/myCorinFragment_aboutServiceSelectItemText"
+        app:layout_constraintTop_toBottomOf="@+id/myCorinFragment_aboutCorinSelectItem" />
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/myCorin_logoutAndSignOutLayout"
+        android:id="@+id/myCorinFragment_loginAndSignOutLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selectItem2">
+        app:layout_constraintTop_toBottomOf="@+id/myCorinFragment_aboutServiceSelectItem">
 
         <TextView
-            android:id="@+id/myCorin_logoutTextView"
+            android:id="@+id/myCorinFragment_loginAndSignOutLayout_logOutTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
-            android:text="로그아웃"
-            app:layout_constraintBottom_toBottomOf="@+id/myCorin_signoutTextView"
-            app:layout_constraintEnd_toStartOf="@+id/view"
-            app:layout_constraintTop_toTopOf="@+id/myCorin_signoutTextView" />
+            android:layout_marginEnd="8dp"
+            android:text="@string/myCorinFragment_loginAndSignOutLayout_logOutTextViewText"
+            app:layout_constraintBottom_toBottomOf="@+id/myCorinFragment_loginAndSignOutLayout_sighOutTextView"
+            app:layout_constraintEnd_toStartOf="@+id/myCorinFragment_loginAndSignOutLayout_verticalDivider1"
+            app:layout_constraintTop_toTopOf="@+id/myCorinFragment_loginAndSignOutLayout_sighOutTextView" />
 
         <View
-            android:id="@+id/view"
-            android:layout_width="0.5dp"
+            android:id="@+id/myCorinFragment_loginAndSignOutLayout_verticalDivider1"
+            style="@style/verticalDivider"
             android:layout_height="10dp"
-            android:layout_marginRight="8dp"
-            android:background="@color/corin_darkGray"
-            app:layout_constraintBottom_toBottomOf="@+id/myCorin_signoutTextView"
-            app:layout_constraintEnd_toStartOf="@+id/myCorin_signoutTextView"
-            app:layout_constraintTop_toTopOf="@+id/myCorin_signoutTextView" />
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/myCorinFragment_loginAndSignOutLayout_sighOutTextView"
+            app:layout_constraintEnd_toStartOf="@+id/myCorinFragment_loginAndSignOutLayout_sighOutTextView"
+            app:layout_constraintTop_toTopOf="@+id/myCorinFragment_loginAndSignOutLayout_sighOutTextView" />
 
         <TextView
-            android:id="@+id/myCorin_signoutTextView"
+            android:id="@+id/myCorinFragment_loginAndSignOutLayout_sighOutTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/myCorinFragment_loginAndSignOutLayout_sighOutTextView"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
-            android:text="회원탈퇴"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

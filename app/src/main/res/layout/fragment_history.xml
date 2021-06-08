@@ -4,67 +4,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/corin_lightGray"
-    >
+    android:background="@color/corin_lightGray">
 
     <com.example.corincoronacheckincustomer.JSHToolBar
         android:id="@+id/jshToolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:elevation="5dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:jshToolBar_title="출입 기록" />
+        style="@style/jshToolBar"
+        app:jshToolBar_title="@string/historyFragment_toolBarTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
+        android:id="@+id/historyFragment_headLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/jshToolbar">
 
         <TextView
+            android:id="@+id/historyFragment_dateTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
             android:text="2021-06-05"
             android:textColor="@color/black"
             android:textSize="17sp"
+            android:layout_marginStart="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/historyFragment_selectDateImageView"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginVertical="8dp"
-            android:layout_marginRight="16dp"
             android:src="@drawable/ic_outline_date_range_24"
+            app:tint="@color/corin_middleBlue"
+            android:layout_marginVertical="8dp"
+            android:layout_marginEnd="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/corin_middleBlue" />
+            tools:ignore="ContentDescription" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historyFragment_historyItemList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:itemCount="2"
         tools:listitem="@layout/widget_item_info_in_out"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/historyFragment_headLayout" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/historyFragment_shareButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
         android:backgroundTint="@color/corin_middleBlue"
-        app:borderWidth="0dp"
-        android:layout_margin="16dp"
         app:tint="@android:color/white"
         android:src="@drawable/ic_outline_share_24"
+        app:borderWidth="0dp"
+        android:layout_margin="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -38,11 +38,11 @@
         app:layout_constraintTop_toBottomOf="@+id/inAndOutInfoItem_totalVisitorTextView" />
 
     <View
-        android:id="@+id/hb1"
+        android:id="@+id/inAndOutInfoItem_verticalDivider1"
         style="@style/verticalDivider"
         android:layout_height="50dp"
         android:layout_marginBottom="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/hb2"
+        app:layout_constraintEnd_toStartOf="@+id/inAndOutInfoItem_verticalDivider2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/inAndOutInfoItem_totalVisitorTextView" />
@@ -53,8 +53,8 @@
         android:layout_height="wrap_content"
         android:text="@string/inAndOutInfoItem_manVisitorTextViewText"
         android:layout_marginStart="16dp"
-        app:layout_constraintStart_toEndOf="@+id/hb1"
-        app:layout_constraintTop_toTopOf="@+id/hb1" />
+        app:layout_constraintStart_toEndOf="@+id/inAndOutInfoItem_verticalDivider1"
+        app:layout_constraintTop_toTopOf="@+id/inAndOutInfoItem_verticalDivider1" />
 
     <TextView
         android:id="@+id/inAndOutInfoItem_manVisitorValueTextView"
@@ -74,8 +74,8 @@
         android:layout_height="wrap_content"
         android:text="@string/inAndOutInfoItem_womenVisitorTextViewText"
         android:layout_marginStart="16dp"
-        app:layout_constraintStart_toEndOf="@+id/hb2"
-        app:layout_constraintTop_toTopOf="@+id/hb2" />
+        app:layout_constraintStart_toEndOf="@+id/inAndOutInfoItem_verticalDivider2"
+        app:layout_constraintTop_toTopOf="@+id/inAndOutInfoItem_verticalDivider2" />
 
     <TextView
         android:id="@+id/inAndOutInfoItem_womenVisitorValueTextView"
@@ -90,12 +90,12 @@
         app:layout_constraintTop_toBottomOf="@+id/inAndOutInfoItem_womenVisitorTextView" />
 
     <View
-        android:id="@+id/hb2"
+        android:id="@+id/inAndOutInfoItem_verticalDivider2"
         style="@style/verticalDivider"
         android:layout_height="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/hb1"
+        app:layout_constraintStart_toEndOf="@+id/inAndOutInfoItem_verticalDivider1"
         app:layout_constraintTop_toTopOf="@+id/inAndOutInfoItem_manVisitorTextView" />
 
     <com.google.android.material.chip.ChipGroup
@@ -103,8 +103,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginVertical="8dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inAndOutInfoItem_totalVisitorValueTextView">

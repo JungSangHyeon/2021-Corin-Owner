@@ -2,16 +2,27 @@
 <resources>
 
     <!--  Text View  -->
+    <style name="corinContentValueTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
     <style name="corinContentTitleTextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginVertical">24dp</item>
         <item name="android:layout_marginLeft">16dp</item>
 
-        <item name="android:backgroundTint">@color/white</item>
-
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="corinContentSubTitleTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
     <!--  Edit Text  -->

@@ -28,7 +28,7 @@ public class JSHSelectItem extends LinearLayout {
         this.addView(jshToolbar);
 
         // Associate View
-        this.title = jshToolbar.findViewById(R.id.title);
+        this.title = jshToolbar.findViewById(R.id.jshSelectItem_titleTextView);
 
         // Initialize View
         this.title.setText(title);

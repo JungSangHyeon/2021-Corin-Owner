@@ -26,13 +26,13 @@ public class JSHInfoEditItem extends LinearLayout {
 
         // Inflate View
         LayoutInflater layoutInflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View jshToolbar = layoutInflater.inflate(R.layout.widget_item_jsh_info_and_edit, this, false);
-        this.addView(jshToolbar);
+        View jshInfoAndEdit = layoutInflater.inflate(R.layout.widget_item_jsh_info_and_edit, this, false);
+        this.addView(jshInfoAndEdit);
 
         // Associate View
-        TextView titleTextView = jshToolbar.findViewById(R.id.title);
-        TextView contentTextView = jshToolbar.findViewById(R.id.content);
-        this.button = jshToolbar.findViewById(R.id.button);
+        TextView titleTextView = jshInfoAndEdit.findViewById(R.id.jshInfoAndEditItem_titleTextView);
+        TextView contentTextView = jshInfoAndEdit.findViewById(R.id.jshInfoAndEditItem_contentTextView);
+        this.button = jshInfoAndEdit.findViewById(R.id.jshInfoAndEditItem_editButton);
 
         // Initialize View
         titleTextView.setText(title);

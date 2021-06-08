@@ -11,7 +11,7 @@
         android:id="@+id/jshToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:jshToolBar_button_image="@drawable/jsh_close"
+        app:jshToolBar_button_image="@drawable/ic_jsh_close"
         app:layout_constraintTop_toTopOf="parent"
         app:jshToolBar_title="" />
 
