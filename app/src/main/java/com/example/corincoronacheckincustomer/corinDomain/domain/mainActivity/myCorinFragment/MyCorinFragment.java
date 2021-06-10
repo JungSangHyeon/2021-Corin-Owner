@@ -1,10 +1,8 @@
-package com.example.corincoronacheckincustomer;
+package com.example.corincoronacheckincustomer.corinDomain.domain.mainActivity.myCorinFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -12,7 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import org.jetbrains.annotations.NotNull;
+import com.example.corincoronacheckincustomer.R;
+import com.example.corincoronacheckincustomer.corinDomain.domain.loginActivity.LoginActivity;
+import com.example.corincoronacheckincustomer.corinDomain.domain.signUpActivity.SignUpActivity;
 
 public class MyCorinFragment extends Fragment {
 
@@ -25,8 +25,8 @@ public class MyCorinFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button loginButton = view.findViewById(R.id.myCorin_loginButton);
-        Button signUpButton = view.findViewById(R.id.myCorin_signUpButton);
+        Button loginButton = view.findViewById(R.id.myCorinFragment_loginLayout_loginButton);
+        Button signUpButton = view.findViewById(R.id.myCorinFragment_loginLayout_signUpButton);
 
         loginButton.setOnClickListener(v->this.getActivity().startActivity(new Intent(this.getContext(), LoginActivity.class)));
         signUpButton.setOnClickListener(v->this.getActivity().startActivity(new Intent(this.getContext(), SignUpActivity.class)));

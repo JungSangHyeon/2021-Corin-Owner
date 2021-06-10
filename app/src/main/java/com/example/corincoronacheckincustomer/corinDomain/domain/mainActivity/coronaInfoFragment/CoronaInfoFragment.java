@@ -1,4 +1,4 @@
-package com.example.corincoronacheckincustomer;
+package com.example.corincoronacheckincustomer.corinDomain.domain.mainActivity.coronaInfoFragment;
 
 import android.os.Bundle;
 
@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.corincoronacheckincustomer.R;
 
 public class CoronaInfoFragment extends Fragment {
 

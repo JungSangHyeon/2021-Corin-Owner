@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    tools:context=".corinDomain.domain.loginActivity.LoginActivity"
     >
 
-    <com.example.corincoronacheckincustomer.JSHToolBar
+    <com.example.corincoronacheckincustomer.jshCrossDomain.JSHToolBar
         android:id="@+id/jshToolbar"
         style="@style/jshToolBar"
         app:jshToolBar_button_image="@drawable/ic_jsh_close"

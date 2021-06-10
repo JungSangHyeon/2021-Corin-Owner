@@ -1,4 +1,4 @@
-package com.example.corincoronacheckincustomer;
+package com.example.corincoronacheckincustomer.corinDomain.domain.mainActivity.coronaInfoFragment;
 
 import android.util.Log;
 

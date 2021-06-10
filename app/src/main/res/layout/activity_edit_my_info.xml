@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/corin_lightGray">
 
-    <com.example.corincoronacheckincustomer.JSHToolBar
+    <com.example.corincoronacheckincustomer.jshCrossDomain.JSHToolBar
         android:id="@+id/jshToolbar"
         style="@style/jshToolBar"
         app:jshToolBar_button_image="@drawable/ic_jsh_before"

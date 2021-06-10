@@ -1,8 +1,10 @@
-package com.example.corincoronacheckincustomer;
+package com.example.corincoronacheckincustomer.corinDomain.domain.loginActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.corincoronacheckincustomer.R;
 
 public class LoginActivity extends AppCompatActivity {
 

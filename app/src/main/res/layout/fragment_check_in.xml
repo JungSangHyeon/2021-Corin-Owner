@@ -4,9 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".CoronaInfoFragment">
+    tools:context=".corinDomain.domain.mainActivity.coronaInfoFragment.CoronaInfoFragment">
 
-    <com.example.corincoronacheckincustomer.JSHToolBar
+    <com.example.corincoronacheckincustomer.jshCrossDomain.JSHToolBar
         android:id="@+id/jshToolbar"
         style="@style/jshToolBar"
         app:jshToolBar_title="체크인"
