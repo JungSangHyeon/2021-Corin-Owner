@@ -2,28 +2,44 @@
 <resources>
 
     <!--  Text View  -->
-    <style name="corinContentValueTextView">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
+        <!--  Content Text View  -->
+        <style name="corinContentTitleTextView">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginVertical">24dp</item>
+            <item name="android:layout_marginLeft">16dp</item>
 
-        <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">18sp</item>
-    </style>
+            <item name="android:textColor">@color/black</item>
+            <item name="android:textSize">20sp</item>
+        </style>
+        <style name="corinContentSubTitleTextView">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>
+        <style name="corinContentValueTextView">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
 
-    <style name="corinContentTitleTextView">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginVertical">24dp</item>
-        <item name="android:layout_marginLeft">16dp</item>
+            <item name="android:textColor">@color/black</item>
+            <item name="android:textSize">18sp</item>
+        </style>
 
-        <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">20sp</item>
-    </style>
+        <!--  Button Text View  -->
+        <style name="corinButtonTextView">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textSize">13sp</item>
+        </style>
+        <style name="corinAccentButtonTextView" parent="corinButtonTextView">
+            <item name="android:textColor">@color/corin_middleBlue</item>
+        </style>
 
-    <style name="corinContentSubTitleTextView">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-    </style>
+        <!--  ETC  -->
+        <style name="corinDescriptionTextView">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textSize">13sp</item>
+        </style>
 
     <!--  Edit Text  -->
     <style name="corinEditText">
@@ -40,13 +56,14 @@
     </style>
 
     <!--  Button  -->
-    <style name="corinSecondaryFragmentActionButton">
+    <style name="corinFragmentActionButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginHorizontal">16dp</item>
         <item name="android:layout_marginTop">8dp</item>
         <item name="android:layout_marginBottom">8dp</item>
-
+    </style>
+    <style name="corinSecondaryFragmentActionButton" parent="corinFragmentActionButton">
         <item name="android:backgroundTint">@color/white</item>
 
         <item name="android:textColor">@color/black</item>
@@ -65,6 +82,12 @@
     <!--  Divider  -->
     <style name="verticalDivider">
         <item name="android:layout_width">1dp</item>
+        <item name="android:background">@color/corin_gray</item>
+    </style>
+    <style name="horizontalDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginHorizontal">16dp</item>
         <item name="android:background">@color/corin_gray</item>
     </style>
 

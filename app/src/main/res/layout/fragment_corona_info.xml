@@ -9,12 +9,11 @@
 
     <com.example.corincoronacheckincustomer.JSHToolBar
         android:id="@+id/jshToolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/white"
-        android:elevation="5dp"
-        app:jshToolBar_title="코로나 현황" />
+        style="@style/jshToolBar"
+        app:jshToolBar_title="코로나 현황"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -24,52 +23,47 @@
         tools:layout_editor_absoluteX="16dp">
 
         <include
-            android:id="@+id/include"
+            android:id="@+id/coronaInfoFragment_include_koreaCoronaInfo"
             layout="@layout/layout_corona_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent" />
 
         <View
-            android:id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginHorizontal="16dp"
-            android:background="@color/corin_gray"
-            app:layout_constraintTop_toBottomOf="@+id/include"
-            tools:layout_editor_absoluteX="16dp" />
+            android:id="@+id/coronaInfoFragment_horizontalDivider1"
+            style="@style/horizontalDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coronaInfoFragment_include_koreaCoronaInfo" />
 
         <include
-            android:id="@+id/include2"
+            android:id="@+id/coronaInfoFragment_include_worldCoronaInfo"
             layout="@layout/layout_corona_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/coronaInfoFragment_horizontalDivider1"
             tools:layout_editor_absoluteX="0dp" />
 
+        <TextView
+            android:id="@+id/coronaInfoFragment_plusSymbolDescription"
+            style="@style/corinDescriptionTextView"
+            android:text="@string/coronaInfoFragment_plusSymbolDescriptionText"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coronaInfoFragment_include_worldCoronaInfo" />
+
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/home_button_moreInfo"
+            android:id="@+id/coronaInfoFragment_moreInfoButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="16dp"
             android:background="@drawable/bg_button_corona_more_info"
-            android:text="지역 및 통계 더보기"
+            android:text="@string/coronaInfoFragment_moreInfoButtonText"
             android:textColor="@color/corin_blue"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/coronaInfoFragment_plusSymbolDescription"
             tools:layout_editor_absoluteX="16dp" />
-
-
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-
-            android:text="\'+\' 기호는 어제 보고된 신규 확진자를 나타냅니다."
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/include2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,13 +10,12 @@
 
     <com.example.corincoronacheckincustomer.JSHToolBar
         android:id="@+id/jshToolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
+        style="@style/jshToolBar"
         app:jshToolBar_button_image="@drawable/ic_jsh_close"
         app:jshToolBar_title="회원가입"
-        android:background="@color/white"
-        android:elevation="5dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
