@@ -5,7 +5,7 @@ import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.corincoronacheckincustomer.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -14,7 +14,8 @@ import static com.example.corincoronacheckincustomer.corinDomain.crossDomain.Con
 
 public class MainActivity extends AppCompatActivity {
 
-    //  Package 정리하고, 자산화 하고... 아이콘... 툴바 프래그 먼트
+    //  자산화 하고... 아이콘... 툴바 프래그 먼트
+    // CoronaInfoFragment Loading Animation
 
     // Associate
         // ETC
@@ -25,11 +26,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//        new Thread(){
+//            @Override
+//            public void run() {
+//                super.run();
+//                CoronaInfoCrawler.getCoronaInfo();
+//            }
+//        }.start();
+
         // Associate View
         BottomNavigationView bottomNavigationView = this.findViewById(R.id.mainActivity_bottomNavigationView);
+        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.mainActivity_fragmentContainer);
 
         // Associate ETC
-        this.mainNavController = Navigation.findNavController(this, R.id.mainActivity_fragmentContainer);
+        this.mainNavController = navHostFragment.getNavController();
 
         // Initialize View
         bottomNavigationView.setOnNavigationItemSelectedListener(this::onNavigationItemSelected);

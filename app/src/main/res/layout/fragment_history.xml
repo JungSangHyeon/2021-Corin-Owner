@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/corin_lightGray">
 
-    <com.example.corincoronacheckincustomer.jshCrossDomain.JSHToolBar
+    <com.example.corincoronacheckincustomer.jshCrossDomain.view.widget.JSHToolBar
         android:id="@+id/jshToolbar"
         style="@style/jshToolBar"
         app:jshToolBar_title="@string/historyFragment_toolBarTitle"
@@ -53,7 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:itemCount="2"
-        tools:listitem="@layout/widget_item_info_in_out"
+        tools:listitem="@layout/layout_item_info_in_out"
         app:layout_constraintTop_toBottomOf="@+id/historyFragment_headLayout" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

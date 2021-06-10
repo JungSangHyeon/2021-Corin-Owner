@@ -1,4 +1,4 @@
-package com.example.corincoronacheckincustomer.jshCrossDomain;
+package com.example.corincoronacheckincustomer.jshCrossDomain.view.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;

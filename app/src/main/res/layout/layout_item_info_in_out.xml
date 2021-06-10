@@ -8,7 +8,7 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/inAndOutInfoItem_contentTitleTextView"
+        android:id="@+id/inAndOutInfoLayout_contentTitleTextView"
         style="@style/corinContentTitleTextView"
         android:text="오후 1시"
         tools:ignore="HardcodedText"
@@ -16,17 +16,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/inAndOutInfoItem_totalVisitorTextView"
+        android:id="@+id/inAndOutInfoLayout_totalVisitorTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/inAndOutInfoItem_totalVisitorTextViewText"
+        android:text="@string/inAndOutInfoLayout_totalVisitorTextViewText"
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inAndOutInfoItem_contentTitleTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/inAndOutInfoLayout_contentTitleTextView" />
 
     <TextView
-        android:id="@+id/inAndOutInfoItem_totalVisitorValueTextView"
+        android:id="@+id/inAndOutInfoLayout_totalVisitorValueTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="23"
@@ -34,30 +34,30 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:layout_marginTop="4dp"
-        app:layout_constraintStart_toStartOf="@+id/inAndOutInfoItem_totalVisitorTextView"
-        app:layout_constraintTop_toBottomOf="@+id/inAndOutInfoItem_totalVisitorTextView" />
+        app:layout_constraintStart_toStartOf="@+id/inAndOutInfoLayout_totalVisitorTextView"
+        app:layout_constraintTop_toBottomOf="@+id/inAndOutInfoLayout_totalVisitorTextView" />
 
     <View
-        android:id="@+id/inAndOutInfoItem_verticalDivider1"
+        android:id="@+id/inAndOutInfoLayout_verticalDivider1"
         style="@style/verticalDivider"
         android:layout_height="50dp"
         android:layout_marginBottom="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/inAndOutInfoItem_verticalDivider2"
+        app:layout_constraintEnd_toStartOf="@+id/inAndOutInfoLayout_verticalDivider2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/inAndOutInfoItem_totalVisitorTextView" />
+        app:layout_constraintTop_toTopOf="@+id/inAndOutInfoLayout_totalVisitorTextView" />
 
     <TextView
-        android:id="@+id/inAndOutInfoItem_manVisitorTextView"
+        android:id="@+id/inAndOutInfoLayout_manVisitorTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/inAndOutInfoItem_manVisitorTextViewText"
+        android:text="@string/inAndOutInfoLayout_manVisitorTextViewText"
         android:layout_marginStart="16dp"
-        app:layout_constraintStart_toEndOf="@+id/inAndOutInfoItem_verticalDivider1"
-        app:layout_constraintTop_toTopOf="@+id/inAndOutInfoItem_verticalDivider1" />
+        app:layout_constraintStart_toEndOf="@+id/inAndOutInfoLayout_verticalDivider1"
+        app:layout_constraintTop_toTopOf="@+id/inAndOutInfoLayout_verticalDivider1" />
 
     <TextView
-        android:id="@+id/inAndOutInfoItem_manVisitorValueTextView"
+        android:id="@+id/inAndOutInfoLayout_manVisitorValueTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3"
@@ -65,20 +65,20 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:layout_marginTop="4dp"
-        app:layout_constraintStart_toStartOf="@+id/inAndOutInfoItem_manVisitorTextView"
-        app:layout_constraintTop_toBottomOf="@+id/inAndOutInfoItem_manVisitorTextView" />
+        app:layout_constraintStart_toStartOf="@+id/inAndOutInfoLayout_manVisitorTextView"
+        app:layout_constraintTop_toBottomOf="@+id/inAndOutInfoLayout_manVisitorTextView" />
 
     <TextView
-        android:id="@+id/inAndOutInfoItem_womenVisitorTextView"
+        android:id="@+id/inAndOutInfoLayout_womenVisitorTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/inAndOutInfoItem_womenVisitorTextViewText"
+        android:text="@string/inAndOutInfoLayout_womenVisitorTextViewText"
         android:layout_marginStart="16dp"
-        app:layout_constraintStart_toEndOf="@+id/inAndOutInfoItem_verticalDivider2"
-        app:layout_constraintTop_toTopOf="@+id/inAndOutInfoItem_verticalDivider2" />
+        app:layout_constraintStart_toEndOf="@+id/inAndOutInfoLayout_verticalDivider2"
+        app:layout_constraintTop_toTopOf="@+id/inAndOutInfoLayout_verticalDivider2" />
 
     <TextView
-        android:id="@+id/inAndOutInfoItem_womenVisitorValueTextView"
+        android:id="@+id/inAndOutInfoLayout_womenVisitorValueTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="17"
@@ -86,53 +86,53 @@
         android:textSize="18sp"
         android:textColor="@color/black"
         android:layout_marginTop="4dp"
-        app:layout_constraintStart_toStartOf="@+id/inAndOutInfoItem_womenVisitorTextView"
-        app:layout_constraintTop_toBottomOf="@+id/inAndOutInfoItem_womenVisitorTextView" />
+        app:layout_constraintStart_toStartOf="@+id/inAndOutInfoLayout_womenVisitorTextView"
+        app:layout_constraintTop_toBottomOf="@+id/inAndOutInfoLayout_womenVisitorTextView" />
 
     <View
-        android:id="@+id/inAndOutInfoItem_verticalDivider2"
+        android:id="@+id/inAndOutInfoLayout_verticalDivider2"
         style="@style/verticalDivider"
         android:layout_height="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/inAndOutInfoItem_verticalDivider1"
-        app:layout_constraintTop_toTopOf="@+id/inAndOutInfoItem_manVisitorTextView" />
+        app:layout_constraintStart_toEndOf="@+id/inAndOutInfoLayout_verticalDivider1"
+        app:layout_constraintTop_toTopOf="@+id/inAndOutInfoLayout_manVisitorTextView" />
 
     <com.google.android.material.chip.ChipGroup
-        android:id="@+id/inAndOutInfoItem_ageChipGroup"
+        android:id="@+id/inAndOutInfoLayout_ageChipGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginVertical="8dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inAndOutInfoItem_totalVisitorValueTextView">
+        app:layout_constraintTop_toBottomOf="@+id/inAndOutInfoLayout_totalVisitorValueTextView">
         <com.google.android.material.chip.Chip
-            android:id="@+id/inAndOutInfoItem_ageChip10"
+            android:id="@+id/inAndOutInfoLayout_ageChip10"
             style="@style/corinChip"
-            android:text="@string/inAndOutInfoItem_ageChip10Text" />
+            android:text="@string/inAndOutInfoLayout_ageChip10Text" />
         <com.google.android.material.chip.Chip
-            android:id="@+id/inAndOutInfoItem_ageChip20"
-            style="@style/corinChip"
-            android:checked="true"
-            android:text="@string/inAndOutInfoItem_ageChip20Text"/>
-        <com.google.android.material.chip.Chip
-            android:id="@+id/inAndOutInfoItem_ageChip30"
+            android:id="@+id/inAndOutInfoLayout_ageChip20"
             style="@style/corinChip"
             android:checked="true"
-            android:text="@string/inAndOutInfoItem_ageChip30Text"/>
+            android:text="@string/inAndOutInfoLayout_ageChip20Text"/>
         <com.google.android.material.chip.Chip
-            android:id="@+id/inAndOutInfoItem_ageChip40"
+            android:id="@+id/inAndOutInfoLayout_ageChip30"
             style="@style/corinChip"
-            android:text="@string/inAndOutInfoItem_ageChip40Text"/>
+            android:checked="true"
+            android:text="@string/inAndOutInfoLayout_ageChip30Text"/>
         <com.google.android.material.chip.Chip
-            android:id="@+id/inAndOutInfoItem_ageChip50"
+            android:id="@+id/inAndOutInfoLayout_ageChip40"
             style="@style/corinChip"
-            android:text="@string/inAndOutInfoItem_ageChip50Text"/>
+            android:text="@string/inAndOutInfoLayout_ageChip40Text"/>
         <com.google.android.material.chip.Chip
-            android:id="@+id/inAndOutInfoItem_ageChip60"
+            android:id="@+id/inAndOutInfoLayout_ageChip50"
             style="@style/corinChip"
-            android:text="@string/inAndOutInfoItem_ageChip60Text"/>
+            android:text="@string/inAndOutInfoLayout_ageChip50Text"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/inAndOutInfoLayout_ageChip60"
+            style="@style/corinChip"
+            android:text="@string/inAndOutInfoLayout_ageChip60Text"/>
     </com.google.android.material.chip.ChipGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

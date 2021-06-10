@@ -34,7 +34,8 @@
         <string name="scanFragment_executeScannerButtonText">스캐너 실행</string>
 
         <!--  Corona Info Fragment  -->
-        <string name="coronaInfoFragment_plusSymbolDescriptionText">\'+\' 기호는 어제 보고된 신규 확진자를 나타냅니다.</string>
+        <string name="coronaInfoFragment_koreaTitleText">대한민국</string>
+        <string name="coronaInfoFragment_worldTitleText">전 세계</string>
         <string name="coronaInfoFragment_moreInfoButtonText">지역 및 통계 더보기</string>
 
         <!--  My Corin Fragment  -->
@@ -72,16 +73,15 @@
         <string name="coronaInfoLayout_totalCuredTitleTextViewText">완치자</string>
         <string name="coronaInfoLayout_totalDeathTitleTextViewText">사망자</string>
 
-    <!--  Widget  -->
-        <!--  Info In And Out Item Widget  -->
-        <string name="inAndOutInfoItem_totalVisitorTextViewText">총 방문자 수</string>
-        <string name="inAndOutInfoItem_manVisitorTextViewText">남성</string>
-        <string name="inAndOutInfoItem_womenVisitorTextViewText">여성</string>
-        <string name="inAndOutInfoItem_ageChip10Text">10대</string>
-        <string name="inAndOutInfoItem_ageChip20Text">20대</string>
-        <string name="inAndOutInfoItem_ageChip30Text">30대</string>
-        <string name="inAndOutInfoItem_ageChip40Text">40대</string>
-        <string name="inAndOutInfoItem_ageChip50Text">50대</string>
-        <string name="inAndOutInfoItem_ageChip60Text">60대</string>
+        <!--  Info In And Out Item Layout  -->
+        <string name="inAndOutInfoLayout_totalVisitorTextViewText">총 방문자 수</string>
+        <string name="inAndOutInfoLayout_manVisitorTextViewText">남성</string>
+        <string name="inAndOutInfoLayout_womenVisitorTextViewText">여성</string>
+        <string name="inAndOutInfoLayout_ageChip10Text">10대</string>
+        <string name="inAndOutInfoLayout_ageChip20Text">20대</string>
+        <string name="inAndOutInfoLayout_ageChip30Text">30대</string>
+        <string name="inAndOutInfoLayout_ageChip40Text">40대</string>
+        <string name="inAndOutInfoLayout_ageChip50Text">50대</string>
+        <string name="inAndOutInfoLayout_ageChip60Text">60대</string>
 
 </resources>

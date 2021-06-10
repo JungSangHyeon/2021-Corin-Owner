@@ -7,7 +7,7 @@
     tools:context=".corinDomain.domain.loginActivity.LoginActivity"
     >
 
-    <com.example.corincoronacheckincustomer.jshCrossDomain.JSHToolBar
+    <com.example.corincoronacheckincustomer.jshCrossDomain.view.widget.JSHToolBar
         android:id="@+id/jshToolbar"
         style="@style/jshToolBar"
         app:jshToolBar_button_image="@drawable/ic_jsh_close"

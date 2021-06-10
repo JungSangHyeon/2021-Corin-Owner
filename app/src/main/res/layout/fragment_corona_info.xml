@@ -7,7 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".corinDomain.domain.mainActivity.coronaInfoFragment.CoronaInfoFragment">
 
-    <com.example.corincoronacheckincustomer.jshCrossDomain.JSHToolBar
+    <com.example.corincoronacheckincustomer.jshCrossDomain.view.widget.JSHToolBar
         android:id="@+id/jshToolbar"
         style="@style/jshToolBar"
         app:jshToolBar_title="코로나 현황"
@@ -16,6 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
@@ -44,25 +45,18 @@
             app:layout_constraintTop_toBottomOf="@+id/coronaInfoFragment_horizontalDivider1"
             tools:layout_editor_absoluteX="0dp" />
 
-        <TextView
-            android:id="@+id/coronaInfoFragment_plusSymbolDescription"
-            style="@style/corinDescriptionTextView"
-            android:text="@string/coronaInfoFragment_plusSymbolDescriptionText"
-            android:layout_marginHorizontal="16dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/coronaInfoFragment_include_worldCoronaInfo" />
-
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/coronaInfoFragment_moreInfoButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
-            android:layout_marginVertical="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/bg_button_corona_more_info"
             android:text="@string/coronaInfoFragment_moreInfoButtonText"
             android:textColor="@color/corin_blue"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/coronaInfoFragment_plusSymbolDescription"
+            app:layout_constraintTop_toBottomOf="@+id/coronaInfoFragment_include_worldCoronaInfo"
             tools:layout_editor_absoluteX="16dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
