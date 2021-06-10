@@ -21,7 +21,7 @@ public class CoronaInfoFragment extends JSHFragment {
     @Override protected int getLayoutId() { return R.layout.fragment_corona_info; }
 
     @Override
-    protected void associateView(View view) {
+    protected void associate(View view) {
         View koreaInclude = view.findViewById(R.id.coronaInfoFragment_include_koreaCoronaInfo);
         this.koreaTitleTextView = koreaInclude.findViewById(R.id.coronaInfoLayout_locationTextView);
         this.koreaTotalPatientTextView = koreaInclude.findViewById(R.id.coronaInfoLayout_totalPatientValueTextView);
@@ -38,7 +38,7 @@ public class CoronaInfoFragment extends JSHFragment {
     }
 
     @Override
-    protected void initializeView() {
+    protected void initialize() {
         new Thread() {
             @Override
             public void run() {

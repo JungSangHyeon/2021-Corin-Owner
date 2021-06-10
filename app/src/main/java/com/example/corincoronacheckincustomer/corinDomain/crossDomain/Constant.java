@@ -14,4 +14,7 @@ public class Constant {
         put(R.id.action_my_corin,R.id.action_global_myCorinFragment);
     }};
 
+
+    // User Entity
+    public enum Gender {eMan, eWomen, eSecrete}
 }

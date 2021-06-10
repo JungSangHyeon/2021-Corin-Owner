@@ -26,10 +26,6 @@ public class CoronaInfoManager {
         WorldTotalDeath;
     }
 
-    public interface OnGetCoronaInfoListener {
-        void onGetCoronaInfo(ArrayList<String> coronaInfo);
-    }
-
     /**
      * Don't Call This In Main Thread
      * Takes 1.5~2sec
@@ -45,9 +41,6 @@ public class CoronaInfoManager {
         } catch (IOException e) { e.printStackTrace(); }
         Log.d("JSH "+ CoronaInfoManager.class.getSimpleName(), info.toString());
         return info;
-    }
-    public static void getCoronaInfo(OnGetCoronaInfoListener listener) {
-        new Thread(() -> listener.onGetCoronaInfo(getCoronaInfo())).start();
     }
 
     /**

@@ -26,19 +26,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        new Thread(){
-//            @Override
-//            public void run() {
-//                super.run();
-//                CoronaInfoCrawler.getCoronaInfo();
-//            }
-//        }.start();
-
         // Associate View
         BottomNavigationView bottomNavigationView = this.findViewById(R.id.mainActivity_bottomNavigationView);
-        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.mainActivity_fragmentContainer);
 
         // Associate ETC
+        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.mainActivity_fragmentContainer);
         this.mainNavController = navHostFragment.getNavController();
 
         // Initialize View

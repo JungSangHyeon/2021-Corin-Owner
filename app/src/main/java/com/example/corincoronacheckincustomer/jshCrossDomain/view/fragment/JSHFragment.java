@@ -18,9 +18,9 @@ public abstract class JSHFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        this.associateView(view);
-        this.initializeView();
+        this.associate(view);
+        this.initialize();
     }
-    protected abstract void associateView(View view);
-    protected abstract void initializeView();
+    protected abstract void associate(View view);
+    protected abstract void initialize();
 }
