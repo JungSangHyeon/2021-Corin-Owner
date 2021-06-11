@@ -46,6 +46,7 @@ public class CheckInFragment extends JSHViewModelFragment<CorinEntity> {
     @Override protected void onActivityResult(ActivityResult result) { this.updateView(); }
 
     private void updateView() {
+        this.entity.setLogin(true);
         if(!this.entity.isLogin()){
             this.qrCodeImageView.setVisibility(View.VISIBLE);
             this.descriptionTextView.setVisibility(View.VISIBLE);

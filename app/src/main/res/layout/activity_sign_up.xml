@@ -37,9 +37,9 @@
             app:layout_constraintTop_toBottomOf="@+id/signUpActivity_include_layoutSettingSignUpInfo" />
 
         <Button
-            android:id="@+id/signUpActivity_nextButton"
+            android:id="@+id/signUpActivity_signUpButton"
             style="@style/corinSecondaryFragmentActionButton"
-            android:text="@string/signUpActivity_nextButtonText"
+            android:text="@string/signUpActivity_signUpButtonText"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

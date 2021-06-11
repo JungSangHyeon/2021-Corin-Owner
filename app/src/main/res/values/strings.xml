@@ -22,7 +22,9 @@
         <string name="loginActivity_noMatchUserText">일치하는 사용자가 없습니다</string>
 
         <!--  Sign Up Activity  -->
-        <string name="signUpActivity_nextButtonText">다음</string>
+        <string name="signUpActivity_signUpButtonText">회원가입</string>
+        <string name="signUpActivity_signUpComplete">회원가입 되었습니다</string>
+        <string name="signUpActivity_passwordAndCheckDifferent">비밀번호와 확인이 다릅니다</string>
 
     <!--  Fragment  -->
         <!--  Check In Fragment  -->

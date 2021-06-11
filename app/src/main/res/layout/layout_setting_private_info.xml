@@ -43,18 +43,18 @@
         app:singleSelection="true">
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/settingPrivateInfoLayout_genderSeceret"
+            android:id="@+id/settingPrivateInfoLayout_genderSeceretChip"
             style="@style/corinChip"
             android:checked="true"
             android:text="@string/settingPrivateInfoLayout_secreteChipText" />
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/settingPrivateInfoLayout_genderMan"
+            android:id="@+id/settingPrivateInfoLayout_genderManChip"
             style="@style/corinChip"
             android:text="@string/settingPrivateInfoLayout_manChipText" />
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/settingPrivateInfoLayout_genderWomen"
+            android:id="@+id/settingPrivateInfoLayout_genderWomenChip"
             style="@style/corinChip"
             android:text="@string/settingPrivateInfoLayout_womenChipText" />
     </com.google.android.material.chip.ChipGroup>
