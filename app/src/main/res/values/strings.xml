@@ -19,6 +19,7 @@
         <string name="loginActivity_loginButtonText">로그인</string>
         <string name="loginActivity_isCorinFirstTextViewText">CORIN이 처음이신가요?</string>
         <string name="loginActivity_signUpTextViewText">회원가입</string>
+        <string name="loginActivity_noMatchUserText">일치하는 사용자가 없습니다</string>
 
         <!--  Sign Up Activity  -->
         <string name="signUpActivity_nextButtonText">다음</string>

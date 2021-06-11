@@ -23,7 +23,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/jshToolbar"
-        app:tint="@color/corin_gray"
         tools:ignore="ContentDescription" />
 
     <TextView

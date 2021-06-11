@@ -104,6 +104,7 @@
         style="@style/corinDescriptionTextView"
         android:text="@string/loginActivity_isCorinFirstTextViewText"
         android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
         app:layout_constraintEnd_toStartOf="@+id/loginActivity_signUpTextView"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"

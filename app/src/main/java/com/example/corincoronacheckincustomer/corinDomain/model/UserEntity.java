@@ -5,10 +5,12 @@ import com.example.corincoronacheckincustomer.corinDomain.crossDomain.Constant;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
 @AllArgsConstructor
+@ToString
 public class UserEntity {
 
     // Attribute

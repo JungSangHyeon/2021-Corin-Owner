@@ -26,6 +26,9 @@ public abstract class JSHViewModelActivity<T> extends JSHActivity implements Vie
         super.onCreate(savedInstanceState);
         setContentView(this.getLayoutId());
 
+        this.associate();
+        this.initialize();
+
         // Create Component
         this.viewModelTool = new JSHViewModelTool(this, this, this);
     }
@@ -61,8 +64,6 @@ public abstract class JSHViewModelActivity<T> extends JSHActivity implements Vie
             this.viewModelTool.getModel().insert(jshEntity);
         }else{
             this.entity = JSHConverter.fromStringToType(jshEntities.get(0).getEntityString(), this.getEntityClass()); // jsh use only 1 entity
-            this.associate();
-            this.initialize();
             this.onModelUpdate();
         }
     }

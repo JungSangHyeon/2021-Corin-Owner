@@ -16,4 +16,6 @@ public class CorinEntity {
 
     // Attribute
     private ArrayList<UserEntity> users;
+    private boolean login = false;
+    private UserEntity loginUser;
 }

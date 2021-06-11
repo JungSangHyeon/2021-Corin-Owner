@@ -26,6 +26,9 @@ public abstract class JSHViewModelFragment<T> extends JSHFragment implements Vie
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        this.associate(view);
+        this.initialize();
+
         // Create Component
         this.viewModelTool = new JSHViewModelTool(this.getActivity(), this, this);
     }
@@ -41,6 +44,7 @@ public abstract class JSHViewModelFragment<T> extends JSHFragment implements Vie
         this.viewModelTool.stopObserve();
         this.save();
     }
+
     public void save(){
         ArrayList<JSHEntity> jshEntityArray = this.viewModelTool.getJSHEntities();
         if(jshEntityArray.size()!=0){
@@ -60,8 +64,6 @@ public abstract class JSHViewModelFragment<T> extends JSHFragment implements Vie
             this.viewModelTool.getModel().insert(jshEntity);
         }else{
             this.entity = JSHConverter.fromStringToType(jshEntities.get(0).getEntityString(), this.getEntityClass()); // jsh use only 1 entity
-            this.associate(this.getView());
-            this.initialize();
             this.onModelUpdate();
         }
     }
