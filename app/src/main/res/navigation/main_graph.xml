@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/coronaInfoFragment"
-        android:name="com.example.corincoronacheckincustomer.corinDomain.domain.mainActivity.coronaInfoFragment.CoronaInfoFragment"
+        android:name="com.example.corincoronacheckincustomer.corinDomain.view.mainActivity.coronaInfoFragment.CoronaInfoFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_corona_info" />
     <fragment
         android:id="@+id/checkInFragment"
-        android:name="com.example.corincoronacheckincustomer.corinDomain.domain.mainActivity.checkInFragment.CheckInFragment"
+        android:name="com.example.corincoronacheckincustomer.corinDomain.view.mainActivity.checkInFragment.CheckInFragment"
         android:label="fragment_check_in"
         tools:layout="@layout/fragment_check_in" />
     <fragment
         android:id="@+id/myCorinFragment"
-        android:name="com.example.corincoronacheckincustomer.corinDomain.domain.mainActivity.myCorinFragment.MyCorinFragment"
+        android:name="com.example.corincoronacheckincustomer.corinDomain.view.mainActivity.myCorinFragment.MyCorinFragment"
         android:label="fragment_my_corin"
         tools:layout="@layout/fragment_my_corin" />
     <action android:id="@+id/action_global_coronaInfoFragment" app:destination="@id/coronaInfoFragment" />

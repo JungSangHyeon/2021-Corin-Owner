@@ -1,4 +1,4 @@
-package com.example.corincoronacheckincustomer.crossDomain;
+package com.example.corincoronacheckincustomer.jshCrossDomain.tech;
 
 import android.content.Intent;
 import android.net.Uri;

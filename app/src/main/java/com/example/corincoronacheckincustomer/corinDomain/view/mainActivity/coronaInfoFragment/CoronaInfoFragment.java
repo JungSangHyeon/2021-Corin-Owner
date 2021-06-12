@@ -1,4 +1,4 @@
-package com.example.corincoronacheckincustomer.corinDomain.domain.mainActivity.coronaInfoFragment;
+package com.example.corincoronacheckincustomer.corinDomain.view.mainActivity.coronaInfoFragment;
 
 import android.view.View;
 import android.widget.Button;
@@ -7,7 +7,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.corincoronacheckincustomer.R;
-import com.example.corincoronacheckincustomer.crossDomain.CoronaInfoManager;
+import com.example.corincoronacheckincustomer.jshCrossDomain.tech.CoronaInfoManager;
 import com.example.corincoronacheckincustomer.jshCrossDomain.view.fragment.JSHFragment;
 
 import java.util.ArrayList;

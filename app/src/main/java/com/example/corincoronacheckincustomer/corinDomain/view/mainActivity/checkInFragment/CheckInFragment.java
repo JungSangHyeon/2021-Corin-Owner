@@ -1,4 +1,4 @@
-package com.example.corincoronacheckincustomer.corinDomain.domain.mainActivity.checkInFragment;
+package com.example.corincoronacheckincustomer.corinDomain.view.mainActivity.checkInFragment;
 
 import android.content.Intent;
 import android.view.View;
@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.activity.result.ActivityResult;
 
 import com.example.corincoronacheckincustomer.R;
-import com.example.corincoronacheckincustomer.corinDomain.domain.loginActivity.LoginActivity;
+import com.example.corincoronacheckincustomer.corinDomain.view.loginActivity.LoginActivity;
 import com.example.corincoronacheckincustomer.corinDomain.model.CorinEntity;
 import com.example.corincoronacheckincustomer.jshCrossDomain.tech.ZXing;
 import com.example.corincoronacheckincustomer.jshCrossDomain.view.fragment.JSHViewModelFragment;

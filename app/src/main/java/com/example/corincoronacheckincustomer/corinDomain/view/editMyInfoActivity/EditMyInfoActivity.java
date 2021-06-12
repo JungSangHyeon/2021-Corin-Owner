@@ -1,4 +1,4 @@
-package com.example.corincoronacheckincustomer.corinDomain.domain.editMyInfoActivity;
+package com.example.corincoronacheckincustomer.corinDomain.view.editMyInfoActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.corincoronacheckincustomer.R;
-import com.example.corincoronacheckincustomer.corinDomain.crossDomain.Constant;
+import com.example.corincoronacheckincustomer.corinDomain.Constant;
 import com.google.android.material.chip.ChipGroup;
 
 public class EditMyInfoActivity extends AppCompatActivity {

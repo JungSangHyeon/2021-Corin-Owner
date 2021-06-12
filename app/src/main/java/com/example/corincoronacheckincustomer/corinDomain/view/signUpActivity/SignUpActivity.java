@@ -1,4 +1,4 @@
-package com.example.corincoronacheckincustomer.corinDomain.domain.signUpActivity;
+package com.example.corincoronacheckincustomer.corinDomain.view.signUpActivity;
 
 import android.app.Activity;
 import android.view.View;
@@ -7,7 +7,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.corincoronacheckincustomer.R;
-import com.example.corincoronacheckincustomer.corinDomain.crossDomain.Constant;
+import com.example.corincoronacheckincustomer.corinDomain.Constant;
 import com.example.corincoronacheckincustomer.corinDomain.model.CorinEntity;
 import com.example.corincoronacheckincustomer.corinDomain.model.UserEntity;
 import com.example.corincoronacheckincustomer.jshCrossDomain.view.activity.JSHViewModelActivity;

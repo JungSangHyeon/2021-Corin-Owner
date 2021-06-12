@@ -1,4 +1,4 @@
-package com.example.corincoronacheckincustomer.corinDomain.domain.mainActivity.myCorinFragment;
+package com.example.corincoronacheckincustomer.corinDomain.view.mainActivity.myCorinFragment;
 
 import android.content.Intent;
 import android.view.View;
@@ -10,10 +10,10 @@ import androidx.activity.result.ActivityResult;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.example.corincoronacheckincustomer.R;
-import com.example.corincoronacheckincustomer.corinDomain.crossDomain.Constant;
-import com.example.corincoronacheckincustomer.corinDomain.domain.editMyInfoActivity.EditMyInfoActivity;
-import com.example.corincoronacheckincustomer.corinDomain.domain.loginActivity.LoginActivity;
-import com.example.corincoronacheckincustomer.corinDomain.domain.signUpActivity.SignUpActivity;
+import com.example.corincoronacheckincustomer.corinDomain.Constant;
+import com.example.corincoronacheckincustomer.corinDomain.view.editMyInfoActivity.EditMyInfoActivity;
+import com.example.corincoronacheckincustomer.corinDomain.view.loginActivity.LoginActivity;
+import com.example.corincoronacheckincustomer.corinDomain.view.signUpActivity.SignUpActivity;
 import com.example.corincoronacheckincustomer.corinDomain.model.CorinEntity;
 import com.example.corincoronacheckincustomer.corinDomain.model.UserEntity;
 import com.example.corincoronacheckincustomer.jshCrossDomain.view.fragment.JSHViewModelFragment;

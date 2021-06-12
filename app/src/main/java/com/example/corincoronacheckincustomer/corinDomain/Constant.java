@@ -1,4 +1,4 @@
-package com.example.corincoronacheckincustomer.corinDomain.crossDomain;
+package com.example.corincoronacheckincustomer.corinDomain;
 
 import com.example.corincoronacheckincustomer.R;
 

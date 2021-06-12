@@ -1,4 +1,4 @@
-package com.example.corincoronacheckincustomer.corinDomain.domain.mainActivity;
+package com.example.corincoronacheckincustomer.corinDomain.view.mainActivity;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -10,12 +10,9 @@ import androidx.navigation.fragment.NavHostFragment;
 import com.example.corincoronacheckincustomer.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import static com.example.corincoronacheckincustomer.corinDomain.crossDomain.Constant.MainActivity_NavigationMap;
+import static com.example.corincoronacheckincustomer.corinDomain.Constant.MainActivity_NavigationMap;
 
 public class MainActivity extends AppCompatActivity {
-
-    //  자산화 하고... 아이콘... 툴바 프래그 먼트
-    // CoronaInfoFragment Loading Animation
 
     // Associate
         // ETC

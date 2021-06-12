@@ -1,6 +1,6 @@
 package com.example.corincoronacheckincustomer.corinDomain.model;
 
-import com.example.corincoronacheckincustomer.corinDomain.crossDomain.Constant;
+import com.example.corincoronacheckincustomer.corinDomain.Constant;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

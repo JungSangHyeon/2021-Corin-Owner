@@ -10,10 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CorinCoronaCheckInCustomer">
-        <activity android:name=".corinDomain.domain.editMyInfoActivity.EditMyInfoActivity"></activity>
-        <activity android:name=".corinDomain.domain.signUpActivity.SignUpActivity" />
-        <activity android:name=".corinDomain.domain.loginActivity.LoginActivity" />
-        <activity android:name="com.example.corincoronacheckincustomer.corinDomain.domain.mainActivity.MainActivity">
+        <activity android:name=".corinDomain.view.editMyInfoActivity.EditMyInfoActivity"></activity>
+        <activity android:name=".corinDomain.view.signUpActivity.SignUpActivity" />
+        <activity android:name=".corinDomain.view.loginActivity.LoginActivity" />
+        <activity android:name=".corinDomain.view.mainActivity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
