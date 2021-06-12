@@ -49,13 +49,16 @@ public class LoginActivity extends JSHViewModelActivity<CorinEntity> {
     }
 
     private void login() {
+        boolean loginOk = false;
         for(UserEntity userEntity : this.entity.getUsers()){
             if(userEntity.getId().equals(this.emailEditText.getText().toString()) && userEntity.getPw().equals(this.pwEditText.getText().toString())){
                 this.entity.setLogin(true);
                 this.entity.setLoginUser(userEntity);
-                return;
+                loginOk = true;
+                break;
             }
         }
-        Toast.makeText(this, R.string.loginActivity_noMatchUserText, Toast.LENGTH_SHORT).show();
+        if(loginOk) this.finish();
+        else Toast.makeText(this, R.string.loginActivity_noMatchUserText, Toast.LENGTH_SHORT).show();
     }
 }

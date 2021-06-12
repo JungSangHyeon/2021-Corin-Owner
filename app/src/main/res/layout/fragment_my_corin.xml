@@ -89,36 +89,36 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/myCorinFragment_loginAndSignOutLayout"
+        android:id="@+id/myCorinFragment_logoutAndSignOutLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myCorinFragment_aboutServiceSelectItem">
 
         <TextView
-            android:id="@+id/myCorinFragment_loginAndSignOutLayout_logOutTextView"
+            android:id="@+id/myCorinFragment_logoutAndSignOutLayout_logOutTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:text="@string/myCorinFragment_loginAndSignOutLayout_logOutTextViewText"
-            app:layout_constraintBottom_toBottomOf="@+id/myCorinFragment_loginAndSignOutLayout_sighOutTextView"
-            app:layout_constraintEnd_toStartOf="@+id/myCorinFragment_loginAndSignOutLayout_verticalDivider1"
-            app:layout_constraintTop_toTopOf="@+id/myCorinFragment_loginAndSignOutLayout_sighOutTextView" />
+            android:text="@string/myCorinFragment_logoutAndSignOutLayout_logOutTextViewText"
+            app:layout_constraintBottom_toBottomOf="@+id/myCorinFragment_logoutAndSignOutLayout_sighOutTextView"
+            app:layout_constraintEnd_toStartOf="@+id/myCorinFragment_logoutAndSignOutLayout_verticalDivider1"
+            app:layout_constraintTop_toTopOf="@+id/myCorinFragment_logoutAndSignOutLayout_sighOutTextView" />
 
         <View
-            android:id="@+id/myCorinFragment_loginAndSignOutLayout_verticalDivider1"
+            android:id="@+id/myCorinFragment_logoutAndSignOutLayout_verticalDivider1"
             style="@style/verticalDivider"
             android:layout_height="10dp"
             android:layout_marginEnd="8dp"
-            app:layout_constraintBottom_toBottomOf="@+id/myCorinFragment_loginAndSignOutLayout_sighOutTextView"
-            app:layout_constraintEnd_toStartOf="@+id/myCorinFragment_loginAndSignOutLayout_sighOutTextView"
-            app:layout_constraintTop_toTopOf="@+id/myCorinFragment_loginAndSignOutLayout_sighOutTextView" />
+            app:layout_constraintBottom_toBottomOf="@+id/myCorinFragment_logoutAndSignOutLayout_sighOutTextView"
+            app:layout_constraintEnd_toStartOf="@+id/myCorinFragment_logoutAndSignOutLayout_sighOutTextView"
+            app:layout_constraintTop_toTopOf="@+id/myCorinFragment_logoutAndSignOutLayout_sighOutTextView" />
 
         <TextView
-            android:id="@+id/myCorinFragment_loginAndSignOutLayout_sighOutTextView"
+            android:id="@+id/myCorinFragment_logoutAndSignOutLayout_sighOutTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/myCorinFragment_loginAndSignOutLayout_sighOutTextView"
+            android:text="@string/myCorinFragment_logoutAndSignOutLayout_sighOutTextView"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
             app:layout_constraintEnd_toEndOf="parent"

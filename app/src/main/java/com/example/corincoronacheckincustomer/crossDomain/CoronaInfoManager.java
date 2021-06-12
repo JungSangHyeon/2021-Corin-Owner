@@ -3,7 +3,6 @@ package com.example.corincoronacheckincustomer.crossDomain;
 import android.content.Intent;
 import android.net.Uri;
 import android.util.Log;
-import android.view.View;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -19,11 +18,11 @@ public class CoronaInfoManager {
     private static String GoogleMoreCoronaInfoUrl = "https://news.google.com/covid19/map?hl=ko&mid=%2Fm%2F06qd3&gl=KR&ceid=KR%3Ako";
     private static String TargetJsname = "fUyIqc";
     public enum CoronaInfoIndex {
-        KoreaTotalPatient, TodayPlusKoreaTotalPatient,
-        KoreaCured, TodayPlusKoreaCured,
-        KoreaDeath, TodayPlusKoreaDeath,
+        KoreaTotalPatient,
+        KoreaCured,
+        KoreaDeath,
         WorldTotalPatient,
-        WorldTotalDeath;
+        WorldTotalDeath
     }
 
     /**
@@ -37,7 +36,10 @@ public class CoronaInfoManager {
         try {
             Document document = Jsoup.connect(GoogleCoronaInfoUrl).get();
             Elements elements = document.select("div[jsname="+TargetJsname+"]");
-            for (Element element : elements) info.add(element.select("span").text().split(" ")[0]);
+            for (Element element : elements) {
+                String s = element.select("span").text().split(" ")[0];
+                if(s.charAt(0)!='+') info.add(s);
+            }
         } catch (IOException e) { e.printStackTrace(); }
         Log.d("JSH "+ CoronaInfoManager.class.getSimpleName(), info.toString());
         return info;

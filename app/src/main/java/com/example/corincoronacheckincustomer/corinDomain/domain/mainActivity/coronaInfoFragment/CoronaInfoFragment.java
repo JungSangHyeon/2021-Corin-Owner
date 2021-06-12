@@ -3,6 +3,7 @@ package com.example.corincoronacheckincustomer.corinDomain.domain.mainActivity.c
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.corincoronacheckincustomer.R;
 import com.example.corincoronacheckincustomer.crossDomain.CoronaInfoManager;
@@ -45,17 +46,20 @@ public class CoronaInfoFragment extends JSHFragment {
                 super.run();
                 ArrayList<String> coronaInfo = CoronaInfoManager.getCoronaInfo();
                 getActivity().runOnUiThread(() -> {
-                    koreaTitleTextView.setText(R.string.coronaInfoFragment_koreaTitleText);
-                    koreaTotalPatientTextView.setText(coronaInfo.get(CoronaInfoManager.CoronaInfoIndex.KoreaTotalPatient.ordinal()));
-                    koreaCuredTextView.setText(coronaInfo.get(CoronaInfoManager.CoronaInfoIndex.KoreaCured.ordinal()));
-                    koreaDeathTextView.setText(coronaInfo.get(CoronaInfoManager.CoronaInfoIndex.KoreaDeath.ordinal()));
+                    try{
+                        koreaTitleTextView.setText(R.string.coronaInfoFragment_koreaTitleText);
+                        koreaTotalPatientTextView.setText(coronaInfo.get(CoronaInfoManager.CoronaInfoIndex.KoreaTotalPatient.ordinal()));
+                        koreaCuredTextView.setText(coronaInfo.get(CoronaInfoManager.CoronaInfoIndex.KoreaCured.ordinal()));
+                        koreaDeathTextView.setText(coronaInfo.get(CoronaInfoManager.CoronaInfoIndex.KoreaDeath.ordinal()));
 
-                    worldTitleTextView.setText(R.string.coronaInfoFragment_worldTitleText);
-                    worldTotalPatientTextView.setText(coronaInfo.get(CoronaInfoManager.CoronaInfoIndex.WorldTotalPatient.ordinal()));
-                    worldCuredTextView.setText("-");
-                    worldDeathTextView.setText(coronaInfo.get(CoronaInfoManager.CoronaInfoIndex.WorldTotalDeath.ordinal()));
+                        worldTitleTextView.setText(R.string.coronaInfoFragment_worldTitleText);
+                        worldTotalPatientTextView.setText(coronaInfo.get(CoronaInfoManager.CoronaInfoIndex.WorldTotalPatient.ordinal()));
+                        worldDeathTextView.setText(coronaInfo.get(CoronaInfoManager.CoronaInfoIndex.WorldTotalDeath.ordinal()));
 
-                    moreInfoButton.setOnClickListener(v->startActivity(CoronaInfoManager.getCoronaMoreInfoIntent()));
+                        moreInfoButton.setOnClickListener(v->startActivity(CoronaInfoManager.getCoronaMoreInfoIntent()));
+                    }catch (Exception e){
+                        Toast.makeText(getContext(), R.string.coronaInfoFragment_siteChanged, Toast.LENGTH_SHORT).show();
+                    }
                 });
             }
         }.start();

@@ -41,4 +41,6 @@ public class MainActivity extends AppCompatActivity {
         this.mainNavController.navigate(MainActivity_NavigationMap.get(menuItem.getItemId()));
         return true;
     }
+
+    @Override public void onBackPressed() { /* Do Nothing */}
 }

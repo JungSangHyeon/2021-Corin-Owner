@@ -42,7 +42,7 @@ public abstract class JSHViewModelFragment<T> extends JSHFragment implements Vie
     public void onPause() {
         super.onPause();
         this.viewModelTool.stopObserve();
-        this.save();
+//        this.save();
     }
 
     public void save(){
