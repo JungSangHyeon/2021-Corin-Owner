@@ -43,6 +43,7 @@ public abstract class JSHViewModelActivity<T> extends JSHActivity implements Vie
     protected void onPause() {
         super.onPause();
         this.viewModelTool.stopObserve();
+        this.save();
     }
     public void save(){
         ArrayList<JSHEntity> jshEntityArray = this.viewModelTool.getJSHEntities();
