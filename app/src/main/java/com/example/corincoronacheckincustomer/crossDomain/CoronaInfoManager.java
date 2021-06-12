@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 public class CoronaInfoManager {
 
+    // Static Value
     private static String GoogleCoronaInfoUrl = "https://www.google.com/search?q=%EC%BD%94%EB%A1%9C%EB%82%98+%ED%98%84%ED%99%A9&oq=zhfhsk+gus&aqs=chrome.1.69i57j69i59i131i433j0l8.1927j0j7&sourceid=chrome&ie=UTF-8";
     private static String GoogleMoreCoronaInfoUrl = "https://news.google.com/covid19/map?hl=ko&mid=%2Fm%2F06qd3&gl=KR&ceid=KR%3Ako";
     private static String TargetJsname = "fUyIqc";
@@ -24,6 +25,9 @@ public class CoronaInfoManager {
         WorldTotalPatient,
         WorldTotalDeath
     }
+
+    // Working Variable
+    private static ArrayList<String> LastCoronaInfo;
 
     /**
      * Don't Call This In Main Thread
@@ -41,8 +45,14 @@ public class CoronaInfoManager {
                 if(s.charAt(0)!='+') info.add(s);
             }
         } catch (IOException e) { e.printStackTrace(); }
+        LastCoronaInfo = info;
         Log.d("JSH "+ CoronaInfoManager.class.getSimpleName(), info.toString());
         return info;
+    }
+
+    public static ArrayList<String> getLastCoronaInfo(){
+        if(LastCoronaInfo==null) Log.d("JSH "+ CoronaInfoManager.class.getSimpleName(), "LastCoronaInfo Is Null");
+        return LastCoronaInfo;
     }
 
     /**
