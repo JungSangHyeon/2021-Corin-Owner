@@ -109,29 +109,27 @@
         app:layout_constraintTop_toBottomOf="@+id/inAndOutInfoLayout_totalVisitorValueTextView">
         <com.google.android.material.chip.Chip
             android:id="@+id/inAndOutInfoLayout_ageChip10"
-            style="@style/corinChip"
+            style="@style/corinUncheckableChip"
             android:text="@string/inAndOutInfoLayout_ageChip10Text" />
         <com.google.android.material.chip.Chip
             android:id="@+id/inAndOutInfoLayout_ageChip20"
-            style="@style/corinChip"
-            android:checked="true"
+            style="@style/corinUncheckableChip"
             android:text="@string/inAndOutInfoLayout_ageChip20Text"/>
         <com.google.android.material.chip.Chip
             android:id="@+id/inAndOutInfoLayout_ageChip30"
-            style="@style/corinChip"
-            android:checked="true"
+            style="@style/corinUncheckableChip"
             android:text="@string/inAndOutInfoLayout_ageChip30Text"/>
         <com.google.android.material.chip.Chip
             android:id="@+id/inAndOutInfoLayout_ageChip40"
-            style="@style/corinChip"
+            style="@style/corinUncheckableChip"
             android:text="@string/inAndOutInfoLayout_ageChip40Text"/>
         <com.google.android.material.chip.Chip
             android:id="@+id/inAndOutInfoLayout_ageChip50"
-            style="@style/corinChip"
+            style="@style/corinUncheckableChip"
             android:text="@string/inAndOutInfoLayout_ageChip50Text"/>
         <com.google.android.material.chip.Chip
             android:id="@+id/inAndOutInfoLayout_ageChip60"
-            style="@style/corinChip"
+            style="@style/corinUncheckableChip"
             android:text="@string/inAndOutInfoLayout_ageChip60Text"/>
     </com.google.android.material.chip.ChipGroup>
 

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.corincoronacheckincustomer">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.corincoronacheckinowner">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
@@ -10,16 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CorinCoronaCheckInCustomer">
-        <activity android:name=".corinDomain.view.editMyInfoActivity.EditMyInfoActivity"></activity>
-        <activity android:name=".corinDomain.view.signUpActivity.SignUpActivity" />
-        <activity android:name=".corinDomain.view.loginActivity.LoginActivity" />
-        <activity android:name=".corinDomain.view.mainActivity.MainActivity">
+        <activity android:name="com.example.corincoronacheckinowner.corinDomain.view.mainActivity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation"/>
     </application>
 
 </manifest>

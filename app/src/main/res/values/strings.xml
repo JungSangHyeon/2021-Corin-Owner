@@ -1,44 +1,20 @@
 <resources>
 
     <!--  Application  -->
-        <string name="app_name">Corin</string>
+    <string name="app_name">Cowner</string>
 
     <!--  Activity  -->
         <!--  Main Activity  -->
-        <string name="mainActivity_bottomNavigation_checkInItemName">체크인</string>
+        <string name="mainActivity_bottomNavigation_scanItemName">스캔</string>
         <string name="mainActivity_bottomNavigation_nowCoronaItemName">코로나 현황</string>
-        <string name="mainActivity_bottomNavigation_myCorinItemName">마이코린</string>
-
-        <!--  Login Activity  -->
-        <string name="loginActivity_corinTextViewText">CORIN</string>
-        <string name="loginActivity_emailEditTextHint">이메일 입력</string>
-        <string name="loginActivity_passwordEditTextHint">비밀번호 입력</string>
-        <string name="loginActivity_autoLoginCheckBoxText">자동 로그인</string>
-        <string name="loginActivity_findIdTextViewText">아이디 찾기</string>
-        <string name="loginActivity_findPasswordTextViewText">비밀번호 찾기</string>
-        <string name="loginActivity_loginButtonText">로그인</string>
-        <string name="loginActivity_isCorinFirstTextViewText">CORIN이 처음이신가요?</string>
-        <string name="loginActivity_signUpTextViewText">회원가입</string>
-        <string name="loginActivity_noMatchUserText">일치하는 사용자가 없습니다</string>
-
-        <!--  Sign Up Activity  -->
-        <string name="signUpActivity_signUpButtonText">회원가입</string>
-        <string name="signUpActivity_signUpComplete">회원가입 되었습니다</string>
-        <string name="signUpActivity_passwordAndCheckDifferent">비밀번호와 확인이 다릅니다</string>
-
-        <!--  Edit My Info Activity  -->
-        <string name="editMyInfoActivity_fillAllInfoText">내용을 전부 채워주세요</string>
+        <string name="mainActivity_bottomNavigation_historyItemName">히스토리</string>
 
     <!--  Fragment  -->
-        <!--  Check In Fragment  -->
-        <string name="checkInFragment_loginButtonDescriptionTextViewText">로그인이 필요합니다</string>
-        <string name="checkInFragment_checkInByQrCode">QR코드를 통해 체크인하세요</string>
-        <string name="checkInFragment_loginButtonText">로그인</string>
-
         <!--  Scan Fragment  -->
         <string name="scanFragment_toolBarTitle">스캔</string>
         <string name="scanFragment_infoTextViewText">스캐너를 실행하고 입구에 배치해 주세요</string>
         <string name="scanFragment_executeScannerButtonText">스캐너 실행</string>
+        <string name="scanFragment_checkInCompleteText">체크인 되었습니다</string>
 
         <!--  Corona Info Fragment  -->
         <string name="coronaInfoFragment_koreaTitleText">대한민국</string>
@@ -46,43 +22,20 @@
         <string name="coronaInfoFragment_moreInfoButtonText">지역 및 통계 더보기</string>
         <string name="coronaInfoFragment_siteChanged">사이트가 변경되어 정보를 가져올 수 없습니다.</string>
 
-        <!--  My Corin Fragment  -->
-        <string name="myCorinFragment_toolBarTitle">마이코린</string>
-        <string name="myCorinFragment_loginLayout_infoTextViewText">로그인 하고 코린을 사용해보세요!</string>
-        <string name="myCorinFragment_loginLayout_loginButtonText">로그인</string>
-        <string name="myCorinFragment_loginLayout_signUpButtonText">회원가입</string>
-        <string name="myCorinFragment_editMyInfoSelectItemText">내 정보 수정</string>
-        <string name="myCorinFragment_aboutCorinSelectItemText">코린 안내</string>
-        <string name="myCorinFragment_aboutServiceSelectItemText">서비스 약관</string>
-        <string name="myCorinFragment_logoutAndSignOutLayout_logOutTextViewText">로그아웃</string>
-        <string name="myCorinFragment_logoutAndSignOutLayout_sighOutTextView">회원탈퇴</string>
-        <string name="myCorinFragment_infoEditCompleteText">정보 수정을 완료했습니다</string>
-
         <!--  History Fragment  -->
         <string name="historyFragment_toolBarTitle">출입 기록</string>
+        <string name="historyFragment_noDataTextViewText">데이터가 없습니다</string>
 
     <!--  Layout  -->
-        <!--  Setting Private Info Layout   -->
-        <string name="settingPrivateInfoLayout_contentTitleText">개인 정보</string>
-        <string name="settingPrivateInfoLayout_nameEditTextHint">이름</string>
-        <string name="settingPrivateInfoLayout_ageEditTextHint">나이</string>
-        <string name="settingPrivateInfoLayout_secreteChipText">비공개</string>
-        <string name="settingPrivateInfoLayout_manChipText">남자</string>
-        <string name="settingPrivateInfoLayout_womenChipText">여자</string>
-
-        <!--  Sign Up Info Layout   -->
-        <string name="settingSignUpInfoLayout_contentTitleText">회원가입 정보</string>
-        <string name="settingSignUpInfoLayout_emailEditTextHint">이메일</string>
-        <string name="settingSignUpInfoLayout_passwordEditTextHint">비밀번호</string>
-        <string name="settingSignUpInfoLayout_passwordCheckEditTextHint">비밀번호 확인</string>
-        <string name="editMyInfoActivity_editMyInfoButtonText">내 정보 수정</string>
-
         <!--  Corona Info Layout  -->
         <string name="coronaInfoLayout_totalPatientTitleTextViewText">총 확진자 수</string>
         <string name="coronaInfoLayout_totalCuredTitleTextViewText">완치자</string>
         <string name="coronaInfoLayout_totalDeathTitleTextViewText">사망자</string>
 
         <!--  Info In And Out Item Layout  -->
+        <string name="inAndOutInfoLayout_pmText">오후</string>
+        <string name="inAndOutInfoLayout_amText">오전</string>
+        <string name="inAndOutInfoLayout_hourText">시</string>
         <string name="inAndOutInfoLayout_totalVisitorTextViewText">총 방문자 수</string>
         <string name="inAndOutInfoLayout_manVisitorTextViewText">남성</string>
         <string name="inAndOutInfoLayout_womenVisitorTextViewText">여성</string>

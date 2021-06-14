@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/action_check_in"
-        android:icon="@drawable/ic_baseline_qr_code_24"
-        android:title="@string/mainActivity_bottomNavigation_checkInItemName"/>
+        android:id="@+id/action_scan"
+        android:icon="@drawable/ic_baseline_qr_code_scanner_24"
+        android:title="@string/mainActivity_bottomNavigation_scanItemName"/>
     <item
         android:id="@+id/action_now_corona"
         android:icon="@drawable/ic_outline_coronavirus_24"
         android:title="@string/mainActivity_bottomNavigation_nowCoronaItemName"/>
     <item
-        android:id="@+id/action_my_corin"
-        android:icon="@drawable/ic_outline_account_circle_24"
-        android:title="@string/mainActivity_bottomNavigation_myCorinItemName"/>
+        android:id="@+id/action_history"
+        android:icon="@drawable/ic_outline_history_24"
+        android:title="@string/mainActivity_bottomNavigation_historyItemName"/>
 </menu>

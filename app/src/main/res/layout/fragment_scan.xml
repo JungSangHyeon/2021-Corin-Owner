@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".corinDomain.view.mainActivity.coronaInfoFragment.CoronaInfoFragment">
 
-    <com.example.corincoronacheckincustomer.jshCrossDomain.view.widget.JSHToolBar
+    <com.example.corincoronacheckinowner.jshCrossDomain.view.widget.JSHToolBar
         android:id="@+id/jshToolbar"
         style="@style/jshToolBar"
         app:jshToolBar_title="@string/scanFragment_toolBarTitle"
@@ -27,8 +27,7 @@
 
     <TextView
         android:id="@+id/scanFragment_infoTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/corinDescriptionTextView"
         android:text="@string/scanFragment_infoTextViewText"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"

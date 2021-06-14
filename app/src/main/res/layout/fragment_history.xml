@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/corin_lightGray">
 
-    <com.example.corincoronacheckincustomer.jshCrossDomain.view.widget.JSHToolBar
+    <com.example.corincoronacheckinowner.jshCrossDomain.view.widget.JSHToolBar
         android:id="@+id/jshToolbar"
         style="@style/jshToolBar"
         app:jshToolBar_title="@string/historyFragment_toolBarTitle"
@@ -51,10 +51,12 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/historyFragment_historyItemList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historyFragment_headLayout"
         tools:itemCount="2"
-        tools:listitem="@layout/layout_item_info_in_out"
-        app:layout_constraintTop_toBottomOf="@+id/historyFragment_headLayout" />
+        tools:listitem="@layout/layout_item_info_in_out" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/historyFragment_shareButton"
@@ -69,5 +71,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/historyFragment_noDataTextView"
+        style="@style/corinDescriptionTextView"
+        android:text="@string/historyFragment_noDataTextViewText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

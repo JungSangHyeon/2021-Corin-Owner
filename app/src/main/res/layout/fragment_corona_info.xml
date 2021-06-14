@@ -7,7 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".corinDomain.view.mainActivity.coronaInfoFragment.CoronaInfoFragment">
 
-    <com.example.corincoronacheckincustomer.jshCrossDomain.view.widget.JSHToolBar
+    <com.example.corincoronacheckinowner.jshCrossDomain.view.widget.JSHToolBar
         android:id="@+id/jshToolbar"
         style="@style/jshToolBar"
         app:jshToolBar_title="코로나 현황"

@@ -78,6 +78,10 @@
         <item name="chipStrokeColor">@color/corin_middleGray</item>
         <item name="chipStrokeWidth">1.5dp</item>
     </style>
+    <style name="corinUncheckableChip" parent="corinChip">
+        <item name="android:enabled">false</item>
+        <item name="android:textColor">@color/text_chip_disabled</item>
+    </style>
 
     <!--  Divider  -->
     <style name="verticalDivider">
