@@ -58,6 +58,6 @@ public class ScanFragment extends JSHViewModelFragment<CorinEntity> {
     }
 
     private void startScan() {
-        this.getActivityResultLauncher().launch(ZXing.getScanIntent(this.getActivity()));
+        this.getActivityResultLauncher().launch(ZXing.getFrontScanIntent(this.getActivity()));
     }
 }

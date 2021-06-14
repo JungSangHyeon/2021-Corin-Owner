@@ -13,6 +13,7 @@ import com.example.corincoronacheckinowner.corinDomain.model.CorinEntity;
 import com.example.corincoronacheckinowner.corinDomain.model.HistoryEntity;
 import com.example.corincoronacheckinowner.corinDomain.model.HistoryPerHourEntity;
 import com.example.corincoronacheckinowner.corinDomain.view.mainActivity.historyFragment.HistoryItemList.HistoryItemListAdapter;
+import com.example.corincoronacheckinowner.corinDomain.tech.POI;
 import com.example.corincoronacheckinowner.jshCrossDomain.view.fragment.JSHViewModelFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -102,6 +103,7 @@ public class HistoryFragment extends JSHViewModelFragment<CorinEntity> {
     }
 
     private void share() {
+        POI.xlsWiter(this.getContext(), this.entity.getHistoryEntities());
     }
 
     private String getDateString(long time){ return Constant.DateFormat.format(time); }

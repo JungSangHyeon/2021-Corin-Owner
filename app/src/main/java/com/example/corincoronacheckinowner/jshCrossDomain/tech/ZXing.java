@@ -32,4 +32,13 @@ public class ZXing {
         intentIntegrator.setPrompt("");
         return intentIntegrator.createScanIntent();
     }
+    public static Intent getFrontScanIntent(Activity activity){
+        IntentIntegrator intentIntegrator = new IntentIntegrator(activity);
+        intentIntegrator.setOrientationLocked(false);
+        intentIntegrator.setPrompt("");
+        Intent intent = intentIntegrator.createScanIntent();
+        intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
+        intent.putExtra("SCAN_CAMERA_ID", 1);
+        return intent;
+    }
 }
