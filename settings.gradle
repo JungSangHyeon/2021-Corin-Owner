@@ -1,2 +1,2 @@
-rootProject.name = "Corin(Corona Check In) Customer"
+rootProject.name = "Corin(Corona Check In) Owner"
 include ':app'
