@@ -20,6 +20,9 @@ import java.util.Calendar;
 
 public class ScanFragment extends JSHViewModelFragment<CorinEntity> {
 
+    // Working Variable
+    private boolean debugging = false;
+
     // Associate
         // View
         private Button loginButton;
@@ -32,7 +35,8 @@ public class ScanFragment extends JSHViewModelFragment<CorinEntity> {
     }
     @Override
     protected void initialize() {
-        this.loginButton.setOnClickListener(v-> this.startScan());
+        this.loginButton.setOnClickListener(v-> this.startFrontScan());
+        this.loginButton.setOnLongClickListener(v -> { this.startBackScan(); return false; });
     }
 
     @Override protected Class getEntityClass() { return CorinEntity.class; }
@@ -44,20 +48,39 @@ public class ScanFragment extends JSHViewModelFragment<CorinEntity> {
             IntentResult scanResult = IntentIntegrator.parseActivityResult(result.getResultCode(), result.getData());
             String data = scanResult.getContents(); // name age genderOrdinal
             String[] dataSet = data.split(" ");
-            HistoryEntity historyEntity = new HistoryEntity(
-                    Calendar.getInstance().getTimeInMillis(),
-                    dataSet[0],
-                    Integer.parseInt(dataSet[1]),
-                    Constant.Gender.values()[Integer.parseInt(dataSet[2])]
-            );
-            this.entity.getHistoryEntities().add(historyEntity);
-            this.save();
-            Toast.makeText(this.getContext(), R.string.scanFragment_checkInCompleteText, Toast.LENGTH_LONG).show();
-            this.startScan();
+
+            try{
+                HistoryEntity historyEntity = new HistoryEntity(
+                        Calendar.getInstance().getTimeInMillis(),
+                        dataSet[0],
+                        Integer.parseInt(dataSet[1]),
+                        Constant.Gender.values()[Integer.parseInt(dataSet[2])]
+                );
+                this.entity.getHistoryEntities().add(historyEntity);
+                this.save();
+            }catch(Exception e){
+                Toast.makeText(this.getContext(), R.string.scanFragment_scanCorinQrCodeText, Toast.LENGTH_LONG).show();
+                if(this.debugging) this.startBackScan();
+                else this.startFrontScan();
+                return;
+            }
+
+            if(this.debugging){
+                Toast.makeText(this.getContext(), data, Toast.LENGTH_LONG).show();
+                this.startBackScan();
+            }else{
+                Toast.makeText(this.getContext(), R.string.scanFragment_checkInCompleteText, Toast.LENGTH_LONG).show();
+                this.startFrontScan();
+            }
         }
     }
 
-    private void startScan() {
+    private void startFrontScan() {
+        this.debugging = false;
         this.getActivityResultLauncher().launch(ZXing.getFrontScanIntent(this.getActivity()));
+    }
+    private void startBackScan() {
+        this.debugging = true;
+        this.getActivityResultLauncher().launch(ZXing.getBackScanIntent(this.getActivity()));
     }
 }

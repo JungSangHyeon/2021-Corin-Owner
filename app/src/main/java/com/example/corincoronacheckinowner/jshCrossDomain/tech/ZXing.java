@@ -26,7 +26,7 @@ public class ZXing {
         } catch (WriterException e) { e.printStackTrace(); }
     }
 
-    public static Intent getScanIntent(Activity activity){
+    public static Intent getBackScanIntent(Activity activity){
         IntentIntegrator intentIntegrator = new IntentIntegrator(activity);
         intentIntegrator.setOrientationLocked(false);
         intentIntegrator.setPrompt("");

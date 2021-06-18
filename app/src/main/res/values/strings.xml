@@ -15,6 +15,7 @@
         <string name="scanFragment_infoTextViewText">스캐너를 실행하고 입구에 배치해 주세요</string>
         <string name="scanFragment_executeScannerButtonText">스캐너 실행</string>
         <string name="scanFragment_checkInCompleteText">체크인 되었습니다</string>
+        <string name="scanFragment_scanCorinQrCodeText">Corin의 QR코드를 읽혀주세요</string>
 
         <!--  Corona Info Fragment  -->
         <string name="coronaInfoFragment_koreaTitleText">대한민국</string>
